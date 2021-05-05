@@ -9,3 +9,4 @@ solution: Jacrys.AthenaSharp.sln
 script:
   - dotnet restore
   - dotnet build
+  - dotnet test src/Jacrys.AthenaSharp.Test/Jacrys.AthenaSharp.Test.csproj
