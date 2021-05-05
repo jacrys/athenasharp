@@ -16,11 +16,11 @@ using System.Reflection;
 using RestSharp;
 using NUnit.Framework;
 
-using IO.Swagger.Client;
-using IO.Swagger.Api;
-using IO.Swagger.Model;
+using Jacrys.AthenaSharp.Client;
+using Jacrys.AthenaSharp.Api;
+using Jacrys.AthenaSharp.Model;
 
-namespace IO.Swagger.Test
+namespace Jacrys.AthenaSharp.Test
 {
     /// <summary>
     ///  Class for testing DefaultApi

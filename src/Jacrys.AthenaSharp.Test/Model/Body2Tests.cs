@@ -14,13 +14,13 @@ using System;
 using System.Linq;
 using System.IO;
 using System.Collections.Generic;
-using IO.Swagger.Api;
-using IO.Swagger.Model;
-using IO.Swagger.Client;
+using Jacrys.AthenaSharp.Api;
+using Jacrys.AthenaSharp.Model;
+using Jacrys.AthenaSharp.Client;
 using System.Reflection;
 using Newtonsoft.Json;
 
-namespace IO.Swagger.Test
+namespace Jacrys.AthenaSharp.Test
 {
     /// <summary>
     ///  Class for testing Body2

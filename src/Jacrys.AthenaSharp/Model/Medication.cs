@@ -19,9 +19,9 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.ComponentModel.DataAnnotations;
-using SwaggerDateConverter = IO.Swagger.Client.SwaggerDateConverter;
+using SwaggerDateConverter = Jacrys.AthenaSharp.Client.SwaggerDateConverter;
 
-namespace IO.Swagger.Model
+namespace Jacrys.AthenaSharp.Model
 {
     /// <summary>
     /// Medication

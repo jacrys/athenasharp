@@ -10,7 +10,7 @@
 
 using System.Collections.Generic;
 
-namespace IO.Swagger.Client
+namespace Jacrys.AthenaSharp.Client
 {
     /// <summary>
     /// Represents a readable-only configuration contract.

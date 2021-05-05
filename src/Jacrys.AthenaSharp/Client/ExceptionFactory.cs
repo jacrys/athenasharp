@@ -11,7 +11,7 @@
 using System;
 using RestSharp;
 
-namespace IO.Swagger.Client
+namespace Jacrys.AthenaSharp.Client
 {
     /// <summary>
     /// A delegate to ExceptionFactory method

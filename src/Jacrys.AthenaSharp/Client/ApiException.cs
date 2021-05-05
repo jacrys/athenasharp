@@ -9,7 +9,7 @@
  */
 using System;
 
-namespace IO.Swagger.Client
+namespace Jacrys.AthenaSharp.Client
 {
     /// <summary>
     /// API Exception
