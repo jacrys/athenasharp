@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- The identifier that must be unique within the hosting gallery -->
+        <id>AthenaSharp</id>
+        <title>AthenaSharp API Library</title>
+
+        <!-- The package version number that is used when resolving dependencies -->
+        <version>1.0</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>Jacrys</authors>
+
+        <!-- Owners are typically nuget.org identities that allow gallery
+             users to earily find other packages by the same owners.  -->
+        <owners>Jacrys</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <developmentDependency>false</developmentDependency>
+
+        <license type="expression">MIT</license>
+
+        <!-- The description can be used in package manager UI. Note that the
+             nuget.org gallery uses information you add in the portal. -->
+        <description>A library generated from a Swagger doc to provide a C# interface to the athenahealth API</description>
+
+        <!-- Dependencies are automatically installed when the package is installed -->
+        <dependencies>
+            <group targetFramework="net5.0">
+                <dependency id="NewtonSoft.Json" version="13.0.1" />
+                <dependency id="JsonSubTypes" version="1.8.0" />
+                <dependency id="RestSharp" version="106.11.7" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+
+        <!-- A readme.txt will be displayed when the package is installed -->
+        <file src="..\..\README.md" target="" />
+        <file src="..\..\docs\**\*.*" target="docs" />
+
+    </files>
+</package>

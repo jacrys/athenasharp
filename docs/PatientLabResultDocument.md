@@ -1,0 +1,46 @@
+# IO.Swagger.Model.PatientLabResultDocument
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Createddate** | **string** | Date the document was created. Please use createddatetime instead. | [optional] 
+**Documentroute** | **string** | Explains method by which the document was entered into the AthenaNet (INTERFACE (digital), FAX, etc.) | [optional] 
+**Documentsubclass** | **string** | Specific type of document | [optional] 
+**Resultstatus** | **string** | The status of the result. | [optional] 
+**Providerid** | **int?** | Provider ID for this document | [optional] 
+**Externalaccessionid** | **string** | The external accession ID for this document. Format depends on the system the ID belongs to. | [optional] 
+**Ordertype** | **string** | Order type group name | [optional] 
+**Status** | **string** | Status of the document | [optional] 
+**Externalnoteonly** | **string** | External note for the patient. | [optional] 
+**Patientid** | **int?** | The athenaNet patient ID. | [optional] 
+**Internalaccessionid** | **string** | The internal accession ID for this document. Format depends on the system the ID belongs to. | [optional] 
+**Isconfidential** | **bool?** | If true, this result document should not be shown to the patient. | [optional] 
+**Createddatetime** | **string** | Date/Time (ISO 8601) the document was created | [optional] 
+**Encounterid** | **string** | Encounter ID | [optional] 
+**Appointmentid** | **int?** | The appointment ID for this document | [optional] 
+**Documentsource** | **string** | Explains where this document originated. | [optional] 
+**Documenttypeid** | **int?** | The ID of the description for this document | [optional] 
+**Internalnote** | **string** | The &#x27;Internal Note&#x27; attached to this document | [optional] 
+**Reportstatus** | **string** | The status of the report. | [optional] 
+**Subject** | **string** | Subject of the document | [optional] 
+**Departmentid** | **string** | Department for the document | [optional] 
+**Encounterdate** | **string** | Date of the encounter associated with this document | [optional] 
+**Lastmodifieddate** | **string** | Date/time (ISO 8601) the document was last modified | [optional] 
+**Deleteddatetime** | **string** | Date/time (ISO 8601) the document was deleted | [optional] 
+**Documentclass** | **string** | Class of document | [optional] 
+**Assignedto** | **string** | Person the document is assigned to | [optional] 
+**Facilityid** | **string** | The ID of the clinical provider associated with this clinical document. Clinical providers are a master list of providers throughout the country. These include providers as well as radiology centers, labs and pharmacies. | [optional] 
+**Observationdate** | **string** | Date/time the observation was taken | [optional] 
+**Interpretation** | **string** | The practice entered interpretation of this result. | [optional] 
+**Labresultid** | **int?** | The primary key for labresult class of documents | [optional] 
+**Labresultloinc** | **string** | Laboratory code that identifies the overall result. | [optional] 
+**Lastmodifieddatetime** | **string** | Date/time (ISO 8601) the document was last modified | [optional] 
+**Notefromlab** | **string** | A note from lab. | [optional] 
+**Priority** | **string** | Document priority, when available. 1 is high, 2 is normal. Some labs use other numbers or characters that are lab-specific. | [optional] 
+**Observationdatetime** | **string** | Date/time (ISO 8601) the observation was taken | [optional] 
+**Description** | **string** | Description of the document type | [optional] 
+**Patientnote** | **string** | External note for the patient. | [optional] 
+**Tietoorderid** | **int?** | Order ID of the order this document is tied to, if any | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

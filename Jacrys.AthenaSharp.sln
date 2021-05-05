@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jacrys.AthenaSharp", "src\Jacrys.AthenaSharp\Jacrys.AthenaSharp.csproj", "{A16F5F3F-A3A0-458E-8A3C-AC7FC4617E78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jacrys.AthenaSharp.Test", "src\Jacrys.AthenaSharp.Test\Jacrys.AthenaSharp.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A16F5F3F-A3A0-458E-8A3C-AC7FC4617E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16F5F3F-A3A0-458E-8A3C-AC7FC4617E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16F5F3F-A3A0-458E-8A3C-AC7FC4617E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16F5F3F-A3A0-458E-8A3C-AC7FC4617E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9F24685-3F04-4D8E-947B-96BEA3939407}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,216 @@
+2021-05-04 13:48:41.393 -05:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.201\
+2021-05-04 13:48:41.466 -05:00 [INF] Registered 1 extensions:
+	Default extension
+2021-05-04 13:48:43.710 -05:00 [INF] Initializing upgrade step Select an entrypoint
+2021-05-04 13:48:43.715 -05:00 [INF] Setting entrypoint to only project in solution: c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\Jacrys.AthenaSharp.csproj
+2021-05-04 13:48:43.725 -05:00 [INF] Initializing upgrade step Select project to upgrade
+2021-05-04 13:48:43.792 -05:00 [INF] Initializing upgrade step Back up project
+2021-05-04 13:48:58.502 -05:00 [INF] Applying upgrade step Back up project
+2021-05-04 13:49:03.969 -05:00 [INF] Backing up c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp to c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.backup
+2021-05-04 13:49:04.180 -05:00 [INF] Project backed up to c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.backup
+2021-05-04 13:49:04.182 -05:00 [INF] Upgrade step Back up project applied successfully
+2021-05-04 13:49:06.430 -05:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-05-04 13:49:16.368 -05:00 [INF] Skipping upgrade step Convert project file to SDK style
+2021-05-04 13:49:16.370 -05:00 [INF] Upgrade step Convert project file to SDK style skipped
+2021-05-04 13:49:29.770 -05:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-05-04 13:49:31.389 -05:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.222702) needs added
+2021-05-04 13:49:31.396 -05:00 [INF] Packages to be added:
+Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.222702
+2021-05-04 13:49:44.845 -05:00 [INF] Saving upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 13:49:47.089 -05:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.201\
+2021-05-04 13:49:47.129 -05:00 [INF] Registered 1 extensions:
+	Default extension
+2021-05-04 13:49:48.308 -05:00 [INF] Loading upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 13:49:48.349 -05:00 [INF] Initializing upgrade step Back up project
+2021-05-04 13:49:48.354 -05:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-05-04 13:49:54.688 -05:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-05-04 13:49:54.691 -05:00 [INF] Converting project file format with try-convert, version 0.7.217901
+2021-05-04 13:49:56.744 -05:00 [INF] [try-convert] Microsoft.Build.Exceptions.InvalidProjectFileException: The SDK 'Microsoft.NET.Sdk' specified could not be found.  c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\Jacrys.AthenaSharp.csproj
+2021-05-04 13:49:56.746 -05:00 [INF] [try-convert]    at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IElementLocation elementLocation, String resourceName, Object[] args)
+2021-05-04 13:49:56.747 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImportsFromUnescapedImportExpressionConditioned(String directoryOfImportingFile, ProjectImportElement importElement, List`1& projects, SdkResult& sdkResult, Boolean throwOnFileNotExistsError)
+2021-05-04 13:49:56.748 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImports(String directoryOfImportingFile, ProjectImportElement importElement, SdkResult& sdkResult)
+2021-05-04 13:49:56.749 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+2021-05-04 13:49:56.750 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+2021-05-04 13:49:56.751 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+2021-05-04 13:49:56.752 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+2021-05-04 13:49:56.753 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 13:49:56.754 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 13:49:56.755 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, EvaluationContext evaluationContext)
+2021-05-04 13:49:56.756 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+2021-05-04 13:49:56.757 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 13:49:56.758 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project..ctor(ProjectRootElement xml, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 13:49:56.759 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.UnconfiguredProject.LoadProjects(ProjectCollection collection, ProjectRootElement rootElement) in /_/src/MSBuild.Abstractions/UnconfiguredProject.cs:line 38
+2021-05-04 13:49:56.760 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspace.TryCreateSdkBaselineProject(String projectFilePath, IProject project, IProjectRootElement root, ImmutableDictionary`2 configurations, String tfm, Boolean keepCurrentTFMs, Nullable`1& baselineProject) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspace.cs:line 197
+2021-05-04 13:49:56.761 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspace..ctor(ImmutableArray`1 paths, Boolean noBackup, String tfm, Boolean keepCurrentTFMs, Boolean forceWeb) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspace.cs:line 55
+2021-05-04 13:49:56.762 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspaceLoader.LoadWorkspace(String path, Boolean noBackup, String tfm, Boolean keepCurrentTFMs, Boolean forceWeb) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspaceLoader.cs:line 42
+2021-05-04 13:49:56.763 -05:00 [INF] [try-convert]    at MSBuild.Conversion.Program.Run(String project, String workspace, String msbuildPath, String tfm, Boolean forceWebConversion, Boolean preview, Boolean diffOnly, Boolean noBackup, Boolean keepCurrentTfms) in /_/src/try-convert/Program.cs:line 102
+2021-05-04 13:49:56.781 -05:00 [ERR] [try-convert] Exited with non-success code: -1
+2021-05-04 13:49:56.894 -05:00 [FTL] Conversion with try-convert failed.
+2021-05-04 13:49:57.790 -05:00 [WRN] Upgrade step Convert project file to SDK style failed: "Failed": Conversion with try-convert failed.
+2021-05-04 13:51:35.577 -05:00 [INF] Saving upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 13:54:16.215 -05:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.201\
+2021-05-04 13:54:16.268 -05:00 [INF] Registered 1 extensions:
+	Default extension
+2021-05-04 13:54:17.534 -05:00 [INF] Loading upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 13:54:17.581 -05:00 [INF] Initializing upgrade step Back up project
+2021-05-04 13:54:17.585 -05:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-05-04 13:54:25.105 -05:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-05-04 13:54:25.108 -05:00 [INF] Converting project file format with try-convert, version 0.7.217901
+2021-05-04 13:54:26.276 -05:00 [INF] [try-convert] Microsoft.Build.Exceptions.InvalidProjectFileException: The SDK 'Microsoft.NET.Sdk' specified could not be found.  c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\Jacrys.AthenaSharp.csproj
+2021-05-04 13:54:26.278 -05:00 [INF] [try-convert]    at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IElementLocation elementLocation, String resourceName, Object[] args)
+2021-05-04 13:54:26.279 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImportsFromUnescapedImportExpressionConditioned(String directoryOfImportingFile, ProjectImportElement importElement, List`1& projects, SdkResult& sdkResult, Boolean throwOnFileNotExistsError)
+2021-05-04 13:54:26.280 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImports(String directoryOfImportingFile, ProjectImportElement importElement, SdkResult& sdkResult)
+2021-05-04 13:54:26.280 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+2021-05-04 13:54:26.281 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+2021-05-04 13:54:26.282 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+2021-05-04 13:54:26.283 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+2021-05-04 13:54:26.284 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 13:54:26.285 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 13:54:26.286 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, EvaluationContext evaluationContext)
+2021-05-04 13:54:26.287 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+2021-05-04 13:54:26.287 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 13:54:26.289 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project..ctor(ProjectRootElement xml, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 13:54:26.290 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.UnconfiguredProject.LoadProjects(ProjectCollection collection, ProjectRootElement rootElement) in /_/src/MSBuild.Abstractions/UnconfiguredProject.cs:line 38
+2021-05-04 13:54:26.291 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspace.TryCreateSdkBaselineProject(String projectFilePath, IProject project, IProjectRootElement root, ImmutableDictionary`2 configurations, String tfm, Boolean keepCurrentTFMs, Nullable`1& baselineProject) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspace.cs:line 197
+2021-05-04 13:54:26.293 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspace..ctor(ImmutableArray`1 paths, Boolean noBackup, String tfm, Boolean keepCurrentTFMs, Boolean forceWeb) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspace.cs:line 55
+2021-05-04 13:54:26.294 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspaceLoader.LoadWorkspace(String path, Boolean noBackup, String tfm, Boolean keepCurrentTFMs, Boolean forceWeb) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspaceLoader.cs:line 42
+2021-05-04 13:54:26.295 -05:00 [INF] [try-convert]    at MSBuild.Conversion.Program.Run(String project, String workspace, String msbuildPath, String tfm, Boolean forceWebConversion, Boolean preview, Boolean diffOnly, Boolean noBackup, Boolean keepCurrentTfms) in /_/src/try-convert/Program.cs:line 102
+2021-05-04 13:54:26.303 -05:00 [ERR] [try-convert] Exited with non-success code: -1
+2021-05-04 13:54:26.406 -05:00 [FTL] Conversion with try-convert failed.
+2021-05-04 13:54:27.287 -05:00 [WRN] Upgrade step Convert project file to SDK style failed: "Failed": Conversion with try-convert failed.
+2021-05-04 14:03:11.679 -05:00 [INF] Saving upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 14:03:14.740 -05:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.201\
+2021-05-04 14:03:14.779 -05:00 [INF] Registered 1 extensions:
+	Default extension
+2021-05-04 14:03:16.203 -05:00 [INF] Loading upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 14:03:16.253 -05:00 [INF] Initializing upgrade step Back up project
+2021-05-04 14:03:16.258 -05:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-05-04 14:03:19.730 -05:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-05-04 14:03:19.732 -05:00 [INF] Converting project file format with try-convert, version 0.7.217901
+2021-05-04 14:03:20.863 -05:00 [INF] [try-convert] Microsoft.Build.Exceptions.InvalidProjectFileException: The SDK 'Microsoft.NET.Sdk' specified could not be found.  c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\Jacrys.AthenaSharp.csproj
+2021-05-04 14:03:20.865 -05:00 [INF] [try-convert]    at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IElementLocation elementLocation, String resourceName, Object[] args)
+2021-05-04 14:03:20.865 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImportsFromUnescapedImportExpressionConditioned(String directoryOfImportingFile, ProjectImportElement importElement, List`1& projects, SdkResult& sdkResult, Boolean throwOnFileNotExistsError)
+2021-05-04 14:03:20.866 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImports(String directoryOfImportingFile, ProjectImportElement importElement, SdkResult& sdkResult)
+2021-05-04 14:03:20.867 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+2021-05-04 14:03:20.868 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+2021-05-04 14:03:20.869 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+2021-05-04 14:03:20.870 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+2021-05-04 14:03:20.870 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 14:03:20.871 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 14:03:20.872 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, EvaluationContext evaluationContext)
+2021-05-04 14:03:20.873 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+2021-05-04 14:03:20.874 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 14:03:20.875 -05:00 [INF] [try-convert]    at Microsoft.Build.Evaluation.Project..ctor(ProjectRootElement xml, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+2021-05-04 14:03:20.875 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.UnconfiguredProject.LoadProjects(ProjectCollection collection, ProjectRootElement rootElement) in /_/src/MSBuild.Abstractions/UnconfiguredProject.cs:line 38
+2021-05-04 14:03:20.877 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspace.TryCreateSdkBaselineProject(String projectFilePath, IProject project, IProjectRootElement root, ImmutableDictionary`2 configurations, String tfm, Boolean keepCurrentTFMs, Nullable`1& baselineProject) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspace.cs:line 197
+2021-05-04 14:03:20.878 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspace..ctor(ImmutableArray`1 paths, Boolean noBackup, String tfm, Boolean keepCurrentTFMs, Boolean forceWeb) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspace.cs:line 55
+2021-05-04 14:03:20.880 -05:00 [INF] [try-convert]    at MSBuild.Abstractions.MSBuildConversionWorkspaceLoader.LoadWorkspace(String path, Boolean noBackup, String tfm, Boolean keepCurrentTFMs, Boolean forceWeb) in /_/src/MSBuild.Abstractions/MSBuildConversionWorkspaceLoader.cs:line 42
+2021-05-04 14:03:20.881 -05:00 [INF] [try-convert]    at MSBuild.Conversion.Program.Run(String project, String workspace, String msbuildPath, String tfm, Boolean forceWebConversion, Boolean preview, Boolean diffOnly, Boolean noBackup, Boolean keepCurrentTfms) in /_/src/try-convert/Program.cs:line 102
+2021-05-04 14:03:20.889 -05:00 [ERR] [try-convert] Exited with non-success code: -1
+2021-05-04 14:03:21.006 -05:00 [FTL] Conversion with try-convert failed.
+2021-05-04 14:03:21.975 -05:00 [WRN] Upgrade step Convert project file to SDK style failed: "Failed": Conversion with try-convert failed.
+2021-05-04 14:06:09.306 -05:00 [INF] Saving upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 14:41:37.216 -05:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.201\
+2021-05-04 14:41:37.251 -05:00 [INF] Registered 1 extensions:
+	Default extension
+2021-05-04 14:41:39.060 -05:00 [INF] Loading upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 14:41:39.106 -05:00 [INF] Initializing upgrade step Back up project
+2021-05-04 14:41:39.112 -05:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-05-04 14:41:39.115 -05:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-05-04 14:41:41.184 -05:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.222702) needs added
+2021-05-04 14:41:41.193 -05:00 [INF] Packages to be added:
+Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.222702
+2021-05-04 14:41:49.365 -05:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-05-04 14:41:49.372 -05:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.222702
+2021-05-04 14:41:51.689 -05:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-05-04 14:41:54.731 -05:00 [INF] Initializing upgrade step Update TFM
+2021-05-04 14:41:54.740 -05:00 [INF] TFM needs updated to netstandard2.0
+2021-05-04 14:41:58.637 -05:00 [INF] Applying upgrade step Update TFM
+2021-05-04 14:42:03.901 -05:00 [INF] Updated TFM to netstandard2.0
+2021-05-04 14:42:03.902 -05:00 [INF] Upgrade step Update TFM applied successfully
+2021-05-04 14:42:06.687 -05:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-05-04 14:42:08.493 -05:00 [INF] Marking package RestSharp, Version=105.2.3 for removal because it doesn't support the target framework but a newer version (106.11.7) does
+2021-05-04 14:42:08.495 -05:00 [WRN] Package RestSharp has been upgraded across major versions (105.2.3 -> 106.11.7) which may introduce breaking changes
+2021-05-04 14:42:08.497 -05:00 [INF] Packages to be removed:
+RestSharp, Version=105.2.3
+2021-05-04 14:42:08.498 -05:00 [INF] Packages to be added:
+RestSharp, Version=106.11.7
+2021-05-04 14:42:12.778 -05:00 [INF] Applying upgrade step Update NuGet Packages
+2021-05-04 14:42:12.779 -05:00 [INF] Removing outdated package reference: RestSharp, Version=105.2.3
+2021-05-04 14:42:12.780 -05:00 [INF] Adding package reference: RestSharp, Version=106.11.7
+2021-05-04 14:42:14.906 -05:00 [INF] Upgrade step Update NuGet Packages applied successfully
+2021-05-04 14:42:20.518 -05:00 [INF] Initializing upgrade step Add template files
+2021-05-04 14:42:20.586 -05:00 [INF] 0 expected template items needed
+2021-05-04 14:42:20.597 -05:00 [INF] Initializing upgrade step Update source code
+2021-05-04 14:42:23.733 -05:00 [INF] Initializing upgrade step Move to next project
+2021-05-04 14:42:39.031 -05:00 [INF] Applying upgrade step Move to next project
+2021-05-04 14:42:39.032 -05:00 [INF] Upgrade step Move to next project applied successfully
+2021-05-04 14:42:40.866 -05:00 [INF] Initializing upgrade step Finalize upgrade
+2021-05-04 14:42:48.872 -05:00 [INF] Applying upgrade step Finalize upgrade
+2021-05-04 14:42:48.873 -05:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-05-04 14:42:51.230 -05:00 [INF] Upgrade has completed. Please review any changes.
+2021-05-04 14:42:51.231 -05:00 [INF] Saving upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp\.upgrade-assistant
+2021-05-04 14:43:04.669 -05:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.201\
+2021-05-04 14:43:04.717 -05:00 [INF] Registered 1 extensions:
+	Default extension
+2021-05-04 14:43:06.753 -05:00 [INF] Initializing upgrade step Select an entrypoint
+2021-05-04 14:43:06.757 -05:00 [INF] Setting entrypoint to user selected project: c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.Test\Jacrys.AthenaSharp.Test.csproj
+2021-05-04 14:43:06.765 -05:00 [INF] Initializing upgrade step Select project to upgrade
+2021-05-04 14:43:06.923 -05:00 [INF] Initializing upgrade step Back up project
+2021-05-04 14:43:12.372 -05:00 [INF] Applying upgrade step Back up project
+2021-05-04 14:43:18.642 -05:00 [INF] Backing up c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.Test to c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.Test.backup
+2021-05-04 14:43:18.809 -05:00 [INF] Project backed up to c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.Test.backup
+2021-05-04 14:43:18.811 -05:00 [INF] Upgrade step Back up project applied successfully
+2021-05-04 14:43:21.449 -05:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-05-04 14:43:28.076 -05:00 [INF] Saving upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.Test\.upgrade-assistant
+2021-05-04 14:46:56.012 -05:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.201\
+2021-05-04 14:46:56.047 -05:00 [INF] Registered 1 extensions:
+	Default extension
+2021-05-04 14:46:57.604 -05:00 [INF] Loading upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.Test\.upgrade-assistant
+2021-05-04 14:46:57.644 -05:00 [INF] Initializing upgrade step Back up project
+2021-05-04 14:46:57.648 -05:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-05-04 14:46:57.650 -05:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-05-04 14:46:59.226 -05:00 [INF] Marking package JsonSubTypes for removal because it appears to be a transitive dependency
+2021-05-04 14:46:59.229 -05:00 [INF] Marking package Newtonsoft.Json for removal because it appears to be a transitive dependency
+2021-05-04 14:46:59.383 -05:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.222702) needs added
+2021-05-04 14:46:59.393 -05:00 [INF] Packages to be removed:
+JsonSubTypes, Version=1.8.0
+Newtonsoft.Json, Version=13.0.1
+2021-05-04 14:46:59.393 -05:00 [INF] Packages to be added:
+Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.222702
+2021-05-04 14:47:28.490 -05:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-05-04 14:47:28.495 -05:00 [INF] Removing outdated package reference: JsonSubTypes, Version=1.8.0
+2021-05-04 14:47:28.496 -05:00 [INF] Removing outdated package reference: Newtonsoft.Json, Version=13.0.1
+2021-05-04 14:47:28.497 -05:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.222702
+2021-05-04 14:47:30.318 -05:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-05-04 14:47:47.159 -05:00 [INF] Initializing upgrade step Update TFM
+2021-05-04 14:47:47.202 -05:00 [INF] TFM needs updated to netstandard2.0
+2021-05-04 14:47:50.067 -05:00 [INF] Applying upgrade step Update TFM
+2021-05-04 14:47:51.765 -05:00 [INF] Updated TFM to netstandard2.0
+2021-05-04 14:47:51.766 -05:00 [INF] Upgrade step Update TFM applied successfully
+2021-05-04 14:47:56.140 -05:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-05-04 14:47:57.586 -05:00 [INF] Marking package RestSharp, Version=105.2.3 for removal because it doesn't support the target framework but a newer version (106.11.7) does
+2021-05-04 14:47:57.587 -05:00 [WRN] Package RestSharp has been upgraded across major versions (105.2.3 -> 106.11.7) which may introduce breaking changes
+2021-05-04 14:47:57.589 -05:00 [INF] Packages to be removed:
+RestSharp, Version=105.2.3
+2021-05-04 14:47:57.590 -05:00 [INF] Packages to be added:
+RestSharp, Version=106.11.7
+2021-05-04 14:47:59.983 -05:00 [INF] Applying upgrade step Update NuGet Packages
+2021-05-04 14:47:59.984 -05:00 [INF] Removing outdated package reference: RestSharp, Version=105.2.3
+2021-05-04 14:47:59.985 -05:00 [INF] Adding package reference: RestSharp, Version=106.11.7
+2021-05-04 14:48:01.794 -05:00 [INF] Marking package RestSharp for removal because it appears to be a transitive dependency
+2021-05-04 14:48:01.798 -05:00 [INF] Removing outdated package reference: RestSharp, Version=106.11.7
+2021-05-04 14:48:03.546 -05:00 [INF] Upgrade step Update NuGet Packages applied successfully
+2021-05-04 14:48:15.965 -05:00 [INF] Initializing upgrade step Add template files
+2021-05-04 14:48:16.002 -05:00 [INF] 0 expected template items needed
+2021-05-04 14:48:16.003 -05:00 [INF] Initializing upgrade step Upgrade app config files
+2021-05-04 14:48:16.017 -05:00 [INF] Found 0 app settings for upgrade: 
+2021-05-04 14:48:16.026 -05:00 [INF] Initializing upgrade step Update source code
+2021-05-04 14:48:17.700 -05:00 [INF] Initializing upgrade step Move to next project
+2021-05-04 14:48:22.282 -05:00 [INF] Applying upgrade step Move to next project
+2021-05-04 14:48:22.283 -05:00 [INF] Upgrade step Move to next project applied successfully
+2021-05-04 14:48:23.583 -05:00 [INF] Initializing upgrade step Finalize upgrade
+2021-05-04 14:48:24.935 -05:00 [INF] Applying upgrade step Finalize upgrade
+2021-05-04 14:48:24.936 -05:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-05-04 14:48:25.823 -05:00 [INF] Upgrade has completed. Please review any changes.
+2021-05-04 14:48:25.824 -05:00 [INF] Saving upgrade progress file at c:\d\athenasharp\core\athenasharp-core\src\Jacrys.AthenaSharp.Test\.upgrade-assistant
