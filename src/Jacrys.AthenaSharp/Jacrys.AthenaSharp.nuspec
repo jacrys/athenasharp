@@ -16,6 +16,7 @@
         <owners>Jacrys</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <developmentDependency>false</developmentDependency>
+        <readme>..\README.md</readme>
         <summary>Provides an SDK to access the athenahealth MDP API</summary>
         <releaseNotes>V 1.0.1 - fixed Namespaces and documentation</releaseNotes>
 
