@@ -6,7 +6,7 @@
         <title>AthenaSharp API Library</title>
 
         <!-- The package version number that is used when resolving dependencies -->
-        <version>1.0.1</version>
+        <version>$version$</version>
 
         <!-- Authors contain text that appears directly on the gallery -->
         <authors>Jacrys</authors>
@@ -20,7 +20,7 @@
         <summary>Provides an SDK to access the athenahealth MDP API</summary>
         <releaseNotes>V 1.0.1 - fixed Namespaces and documentation</releaseNotes>
 
-        <repository type="git" url="https://www.github.com/jacrys/athenasharp" />
+        <repository type="git" url="https://www.github.com/jacrys/athenasharp" branch="main"/>
         <license type="expression">MIT</license>
 
         <!-- The description can be used in package manager UI. Note that the
