@@ -3439,9 +3439,6 @@ namespace Jacrys.AthenaSharp.Api
             // verify the required parameter 'appointmenttypeid' is set
             if (appointmenttypeid == null)
                 throw new ApiException(400, "Missing required parameter 'appointmenttypeid' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'bookingnote' is set
-            if (bookingnote == null)
-                throw new ApiException(400, "Missing required parameter 'bookingnote' when calling DefaultApi->BookAppointmentById");
             // verify the required parameter 'departmentid' is set
             if (departmentid == null)
                 throw new ApiException(400, "Missing required parameter 'departmentid' when calling DefaultApi->BookAppointmentById");
@@ -3451,33 +3448,9 @@ namespace Jacrys.AthenaSharp.Api
             // verify the required parameter 'ignoreschedulablepermission' is set
             if (ignoreschedulablepermission == null)
                 throw new ApiException(400, "Missing required parameter 'ignoreschedulablepermission' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'insurancecompany' is set
-            if (insurancecompany == null)
-                throw new ApiException(400, "Missing required parameter 'insurancecompany' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'insurancegroupid' is set
-            if (insurancegroupid == null)
-                throw new ApiException(400, "Missing required parameter 'insurancegroupid' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'insuranceidnumber' is set
-            if (insuranceidnumber == null)
-                throw new ApiException(400, "Missing required parameter 'insuranceidnumber' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'insurancenote' is set
-            if (insurancenote == null)
-                throw new ApiException(400, "Missing required parameter 'insurancenote' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'insurancephone' is set
-            if (insurancephone == null)
-                throw new ApiException(400, "Missing required parameter 'insurancephone' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'insuranceplanname' is set
-            if (insuranceplanname == null)
-                throw new ApiException(400, "Missing required parameter 'insuranceplanname' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'insurancepolicyholder' is set
-            if (insurancepolicyholder == null)
-                throw new ApiException(400, "Missing required parameter 'insurancepolicyholder' when calling DefaultApi->BookAppointmentById");
             // verify the required parameter 'nopatientcase' is set
             if (nopatientcase == null)
                 throw new ApiException(400, "Missing required parameter 'nopatientcase' when calling DefaultApi->BookAppointmentById");
-            // verify the required parameter 'reasonid' is set
-            if (reasonid == null)
-                throw new ApiException(400, "Missing required parameter 'reasonid' when calling DefaultApi->BookAppointmentById");
             // verify the required parameter 'urgentyn' is set
             if (urgentyn == null)
                 throw new ApiException(400, "Missing required parameter 'urgentyn' when calling DefaultApi->BookAppointmentById");
