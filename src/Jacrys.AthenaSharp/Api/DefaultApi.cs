@@ -202,7 +202,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="race"></param>
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
-        /// <returns>List&lt;PatientCreatedResponse&gt;</returns>
+        /// <returns>List{PatientCreatedResponse}</returns>
         List<PatientCreatedResponse> CreatePatient (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant);
 
         /// <summary>
@@ -228,7 +228,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="race"></param>
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
-        /// <returns>ApiResponse of List&lt;PatientCreatedResponse&gt;</returns>
+        /// <returns>ApiResponse of List{PatientCreatedResponse}</returns>
         ApiResponse<List<PatientCreatedResponse>> CreatePatientWithHttpInfo (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant);
         /// <summary>
         /// Create single lab result
@@ -751,7 +751,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>List&lt;Encounter&gt;</returns>
+        /// <returns>List{Encounter}</returns>
         List<Encounter> GetEncounter (int? practiceid, string apivariant, int? encounterid);
 
         /// <summary>
@@ -764,7 +764,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>ApiResponse of List&lt;Encounter&gt;</returns>
+        /// <returns>ApiResponse of List{Encounter}</returns>
         ApiResponse<List<Encounter>> GetEncounterWithHttpInfo (int? practiceid, string apivariant, int? encounterid);
         /// <summary>
         /// Given an encounter returns the assessment text.
@@ -776,7 +776,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>List&lt;EncounterAssesmentText&gt;</returns>
+        /// <returns>List{EncounterAssesmentText}</returns>
         List<EncounterAssesmentText> GetEncounterAssesmentText (int? practiceid, string apivariant, int? encounterid);
 
         /// <summary>
@@ -789,7 +789,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>ApiResponse of List&lt;EncounterAssesmentText&gt;</returns>
+        /// <returns>ApiResponse of List{EncounterAssesmentText}</returns>
         ApiResponse<List<EncounterAssesmentText>> GetEncounterAssesmentTextWithHttpInfo (int? practiceid, string apivariant, int? encounterid);
         /// <summary>
         /// Get open appointment slots
@@ -851,7 +851,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showhidden">Includes the lab results and analytes marked as hidden. Hidden lab results and analytes are created when they are manually entered, for example on the qm tab or in flowsheets.  (optional)</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned. (optional)</param>
         /// <param name="startdate">Filter lab orders not individual results that are on or after this date. Example: startdate&#x3D;6/21/2015. If no startdate is specified, all prior lab orders will be included until enddate if specified.  (optional)</param>
-        /// <returns>List&lt;AnalytesList&gt;</returns>
+        /// <returns>List{AnalytesList}</returns>
         List<AnalytesList> GetPatientAnalytes (int? practiceid, string apivariant, int? patientId, int? departmentid, int? allresultsbyencounterid = null, string analyteresultstatus = null, string enddate = null, string labresultstatus = null, bool? showabnormaldetails = null, bool? showhidden = null, bool? showtemplate = null, string startdate = null);
 
         /// <summary>
@@ -873,7 +873,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showhidden">Includes the lab results and analytes marked as hidden. Hidden lab results and analytes are created when they are manually entered, for example on the qm tab or in flowsheets.  (optional)</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned. (optional)</param>
         /// <param name="startdate">Filter lab orders not individual results that are on or after this date. Example: startdate&#x3D;6/21/2015. If no startdate is specified, all prior lab orders will be included until enddate if specified.  (optional)</param>
-        /// <returns>ApiResponse of List&lt;AnalytesList&gt;</returns>
+        /// <returns>ApiResponse of List{AnalytesList}</returns>
         ApiResponse<List<AnalytesList>> GetPatientAnalytesWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid, int? allresultsbyencounterid = null, string analyteresultstatus = null, string enddate = null, string labresultstatus = null, bool? showabnormaldetails = null, bool? showhidden = null, bool? showtemplate = null, string startdate = null);
         /// <summary>
         /// Get a patient by ID
@@ -896,7 +896,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showinsurance">Include patient insurance information. (optional)</param>
         /// <param name="showlocalpatientid">If set, will show local patient id. (optional)</param>
         /// <param name="showportalstatus">If set, will include portal enrollment status in response. (optional)</param>
-        /// <returns>List&lt;Patient&gt;</returns>
+        /// <returns>List{Patient}</returns>
         List<Patient> GetPatientById (int? practiceid, string apivariant, int? patientId, int? departmentid = null, bool? ignorerestrictions = null, bool? show2015edcehrtvalues = null, bool? showallclaims = null, bool? showallpatientdepartmentstatus = null, bool? showbalancedetails = null, bool? showcustomfields = null, bool? showfullssn = null, bool? showinsurance = null, bool? showlocalpatientid = null, bool? showportalstatus = null);
 
         /// <summary>
@@ -920,7 +920,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showinsurance">Include patient insurance information. (optional)</param>
         /// <param name="showlocalpatientid">If set, will show local patient id. (optional)</param>
         /// <param name="showportalstatus">If set, will include portal enrollment status in response. (optional)</param>
-        /// <returns>ApiResponse of List&lt;Patient&gt;</returns>
+        /// <returns>ApiResponse of List{Patient}</returns>
         ApiResponse<List<Patient>> GetPatientByIdWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid = null, bool? ignorerestrictions = null, bool? show2015edcehrtvalues = null, bool? showallclaims = null, bool? showallpatientdepartmentstatus = null, bool? showbalancedetails = null, bool? showcustomfields = null, bool? showfullssn = null, bool? showinsurance = null, bool? showlocalpatientid = null, bool? showportalstatus = null);
         /// <summary>
         /// Get a patient CCDA informtion by ID
@@ -932,7 +932,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="patientId">Id of the patient for which get information</param>
-        /// <returns>List&lt;PatientCcda&gt;</returns>
+        /// <returns>List{PatientCcda}</returns>
         List<PatientCcda> GetPatientCcdaRecord (int? practiceid, string apivariant, int? patientId);
 
         /// <summary>
@@ -945,7 +945,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="patientId">Id of the patient for which get information</param>
-        /// <returns>ApiResponse of List&lt;PatientCcda&gt;</returns>
+        /// <returns>ApiResponse of List{PatientCcda}</returns>
         ApiResponse<List<PatientCcda>> GetPatientCcdaRecordWithHttpInfo (int? practiceid, string apivariant, int? patientId);
         /// <summary>
         /// Get encounters for the speicic patient.
@@ -961,7 +961,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showclinicalprovider">If set, this will show the information about the provider receiving the order. (optional)</param>
         /// <param name="showdeclinedorders">If set, include orders that were declined (optional)</param>
         /// <param name="showexternalcodes">If set, translate the order information to relevant external vocabularies, where available. Examples are medictions to RxNorm and NDC, vaccines to CVX and MVX, labs to LOINC, etc. Our mappings are not exhaustive.  (optional)</param>
-        /// <returns>List&lt;EncounterDiagnosesList&gt;</returns>
+        /// <returns>List{EncounterDiagnosesList}</returns>
         List<EncounterDiagnosesList> GetPatientEncounterOrders (int? practiceid, string apivariant, int? encounterid, bool? allowdischargetype = null, bool? showclinicalprovider = null, bool? showdeclinedorders = null, bool? showexternalcodes = null);
 
         /// <summary>
@@ -978,7 +978,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showclinicalprovider">If set, this will show the information about the provider receiving the order. (optional)</param>
         /// <param name="showdeclinedorders">If set, include orders that were declined (optional)</param>
         /// <param name="showexternalcodes">If set, translate the order information to relevant external vocabularies, where available. Examples are medictions to RxNorm and NDC, vaccines to CVX and MVX, labs to LOINC, etc. Our mappings are not exhaustive.  (optional)</param>
-        /// <returns>ApiResponse of List&lt;EncounterDiagnosesList&gt;</returns>
+        /// <returns>ApiResponse of List{EncounterDiagnosesList}</returns>
         ApiResponse<List<EncounterDiagnosesList>> GetPatientEncounterOrdersWithHttpInfo (int? practiceid, string apivariant, int? encounterid, bool? allowdischargetype = null, bool? showclinicalprovider = null, bool? showdeclinedorders = null, bool? showexternalcodes = null);
         /// <summary>
         /// Get encounters for the speicic patient.
@@ -998,7 +998,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallstatuses">By default only encounters in OPEN, CLOSED, or REVIEW status are retrieved, with this flag, encounters aren&#x27;t filtered by status.  (optional)</param>
         /// <param name="showalltypes">Retrieve all encounter types, by default only VISIT and ORDERSONLY are retrieved. (optional)</param>
         /// <param name="showdiagnoses">Query diagnosis information for every encounter (optional)</param>
-        /// <returns>List&lt;EncountersList&gt;</returns>
+        /// <returns>List{EncountersList}</returns>
         List<EncountersList> GetPatientEncounters (int? practiceid, string apivariant, int? patientId, int? departmentid, int? appointmentid = null, int? providerid = null, string enddate = null, string startdate = null, bool? showallstatuses = null, bool? showalltypes = null, bool? showdiagnoses = null);
 
         /// <summary>
@@ -1019,7 +1019,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallstatuses">By default only encounters in OPEN, CLOSED, or REVIEW status are retrieved, with this flag, encounters aren&#x27;t filtered by status.  (optional)</param>
         /// <param name="showalltypes">Retrieve all encounter types, by default only VISIT and ORDERSONLY are retrieved. (optional)</param>
         /// <param name="showdiagnoses">Query diagnosis information for every encounter (optional)</param>
-        /// <returns>ApiResponse of List&lt;EncountersList&gt;</returns>
+        /// <returns>ApiResponse of List{EncountersList}</returns>
         ApiResponse<List<EncountersList>> GetPatientEncountersWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid, int? appointmentid = null, int? providerid = null, string enddate = null, string startdate = null, bool? showallstatuses = null, bool? showalltypes = null, bool? showdiagnoses = null);
         /// <summary>
         /// Get information about patient lab result document
@@ -1033,7 +1033,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="patientId">Id of the patient for which get information</param>
         /// <param name="labResultId">Id of the lab result</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned.  (optional)</param>
-        /// <returns>List&lt;PatientLabResultDocumentDetails&gt;</returns>
+        /// <returns>List{PatientLabResultDocumentDetails}</returns>
         List<PatientLabResultDocumentDetails> GetPatientLabResultDocument (int? practiceid, string apivariant, int? patientId, int? labResultId, bool? showtemplate = null);
 
         /// <summary>
@@ -1048,7 +1048,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="patientId">Id of the patient for which get information</param>
         /// <param name="labResultId">Id of the lab result</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned.  (optional)</param>
-        /// <returns>ApiResponse of List&lt;PatientLabResultDocumentDetails&gt;</returns>
+        /// <returns>ApiResponse of List{PatientLabResultDocumentDetails}</returns>
         ApiResponse<List<PatientLabResultDocumentDetails>> GetPatientLabResultDocumentWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? labResultId, bool? showtemplate = null);
         /// <summary>
         /// Get a patient lab results documents
@@ -1385,7 +1385,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallproviderids">In athenaNet&#x27;s internal data structures, a single provider can be represented by multiple IDs. These IDs are used in certain external messages (e.g. HL7) and thus these IDs may need to be known by the API user as well. When set to true, a list of all of these ancillary IDs will be provided.  (optional)</param>
         /// <param name="showfederalidnumber">Include the provider&#x27;s federal ID number in results.  (optional)</param>
         /// <param name="showusualdepartmentguessthreshold">There are situations where determining where a provider \&quot;normally\&quot; practices is desired. Unfortuantely, there is no such concept in athenaNet since providers often practice in multiple locations. However, we can use some intelligence to determine this by looking back over the previous few months (90 days) to see actual practice. To enable this, set this value between 0 and 1; it is highly recommended to be at least .5. This is the ratio of appointments in a given department to the total number of appointments for that provider. A value of .5 means \&quot;the provider&#x27;s appointments are 50% in the department guessed.\&quot; Setting this to 1 would only return a department if ALL of the provider&#x27;s appointments were in one department.  (optional)</param>
-        /// <returns>List&lt;Provider&gt;</returns>
+        /// <returns>List{Provider}</returns>
         List<Provider> GetProviderById (int? practiceid, string apivariant, int? providerId, bool? showallproviderids = null, int? showfederalidnumber = null, decimal? showusualdepartmentguessthreshold = null);
 
         /// <summary>
@@ -1401,7 +1401,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallproviderids">In athenaNet&#x27;s internal data structures, a single provider can be represented by multiple IDs. These IDs are used in certain external messages (e.g. HL7) and thus these IDs may need to be known by the API user as well. When set to true, a list of all of these ancillary IDs will be provided.  (optional)</param>
         /// <param name="showfederalidnumber">Include the provider&#x27;s federal ID number in results.  (optional)</param>
         /// <param name="showusualdepartmentguessthreshold">There are situations where determining where a provider \&quot;normally\&quot; practices is desired. Unfortuantely, there is no such concept in athenaNet since providers often practice in multiple locations. However, we can use some intelligence to determine this by looking back over the previous few months (90 days) to see actual practice. To enable this, set this value between 0 and 1; it is highly recommended to be at least .5. This is the ratio of appointments in a given department to the total number of appointments for that provider. A value of .5 means \&quot;the provider&#x27;s appointments are 50% in the department guessed.\&quot; Setting this to 1 would only return a department if ALL of the provider&#x27;s appointments were in one department.  (optional)</param>
-        /// <returns>ApiResponse of List&lt;Provider&gt;</returns>
+        /// <returns>ApiResponse of List{Provider}</returns>
         ApiResponse<List<Provider>> GetProviderByIdWithHttpInfo (int? practiceid, string apivariant, int? providerId, bool? showallproviderids = null, int? showfederalidnumber = null, decimal? showusualdepartmentguessthreshold = null);
         /// <summary>
         /// Get a providers
@@ -1650,7 +1650,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="race"></param>
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
-        /// <returns>Task of List&lt;PatientCreatedResponse&gt;</returns>
+        /// <returns>Task of List{PatientCreatedResponse}</returns>
         System.Threading.Tasks.Task<List<PatientCreatedResponse>> CreatePatientAsync (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant);
 
         /// <summary>
@@ -1676,7 +1676,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="race"></param>
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
-        /// <returns>Task of ApiResponse (List&lt;PatientCreatedResponse&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{PatientCreatedResponse})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<PatientCreatedResponse>>> CreatePatientAsyncWithHttpInfo (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant);
         /// <summary>
         /// Create single lab result
@@ -2199,7 +2199,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>Task of List&lt;Encounter&gt;</returns>
+        /// <returns>Task of List{Encounter}</returns>
         System.Threading.Tasks.Task<List<Encounter>> GetEncounterAsync (int? practiceid, string apivariant, int? encounterid);
 
         /// <summary>
@@ -2212,7 +2212,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>Task of ApiResponse (List&lt;Encounter&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{Encounter})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Encounter>>> GetEncounterAsyncWithHttpInfo (int? practiceid, string apivariant, int? encounterid);
         /// <summary>
         /// Given an encounter returns the assessment text.
@@ -2224,7 +2224,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>Task of List&lt;EncounterAssesmentText&gt;</returns>
+        /// <returns>Task of List{EncounterAssesmentText}</returns>
         System.Threading.Tasks.Task<List<EncounterAssesmentText>> GetEncounterAssesmentTextAsync (int? practiceid, string apivariant, int? encounterid);
 
         /// <summary>
@@ -2237,7 +2237,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>Task of ApiResponse (List&lt;EncounterAssesmentText&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{EncounterAssesmentText})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<EncounterAssesmentText>>> GetEncounterAssesmentTextAsyncWithHttpInfo (int? practiceid, string apivariant, int? encounterid);
         /// <summary>
         /// Get open appointment slots
@@ -2299,7 +2299,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showhidden">Includes the lab results and analytes marked as hidden. Hidden lab results and analytes are created when they are manually entered, for example on the qm tab or in flowsheets.  (optional)</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned. (optional)</param>
         /// <param name="startdate">Filter lab orders not individual results that are on or after this date. Example: startdate&#x3D;6/21/2015. If no startdate is specified, all prior lab orders will be included until enddate if specified.  (optional)</param>
-        /// <returns>Task of List&lt;AnalytesList&gt;</returns>
+        /// <returns>Task of List{AnalytesList}</returns>
         System.Threading.Tasks.Task<List<AnalytesList>> GetPatientAnalytesAsync (int? practiceid, string apivariant, int? patientId, int? departmentid, int? allresultsbyencounterid = null, string analyteresultstatus = null, string enddate = null, string labresultstatus = null, bool? showabnormaldetails = null, bool? showhidden = null, bool? showtemplate = null, string startdate = null);
 
         /// <summary>
@@ -2321,7 +2321,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showhidden">Includes the lab results and analytes marked as hidden. Hidden lab results and analytes are created when they are manually entered, for example on the qm tab or in flowsheets.  (optional)</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned. (optional)</param>
         /// <param name="startdate">Filter lab orders not individual results that are on or after this date. Example: startdate&#x3D;6/21/2015. If no startdate is specified, all prior lab orders will be included until enddate if specified.  (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;AnalytesList&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{AnalytesList})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<AnalytesList>>> GetPatientAnalytesAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid, int? allresultsbyencounterid = null, string analyteresultstatus = null, string enddate = null, string labresultstatus = null, bool? showabnormaldetails = null, bool? showhidden = null, bool? showtemplate = null, string startdate = null);
         /// <summary>
         /// Get a patient by ID
@@ -2344,7 +2344,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showinsurance">Include patient insurance information. (optional)</param>
         /// <param name="showlocalpatientid">If set, will show local patient id. (optional)</param>
         /// <param name="showportalstatus">If set, will include portal enrollment status in response. (optional)</param>
-        /// <returns>Task of List&lt;Patient&gt;</returns>
+        /// <returns>Task of List{Patient}</returns>
         System.Threading.Tasks.Task<List<Patient>> GetPatientByIdAsync (int? practiceid, string apivariant, int? patientId, int? departmentid = null, bool? ignorerestrictions = null, bool? show2015edcehrtvalues = null, bool? showallclaims = null, bool? showallpatientdepartmentstatus = null, bool? showbalancedetails = null, bool? showcustomfields = null, bool? showfullssn = null, bool? showinsurance = null, bool? showlocalpatientid = null, bool? showportalstatus = null);
 
         /// <summary>
@@ -2368,7 +2368,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showinsurance">Include patient insurance information. (optional)</param>
         /// <param name="showlocalpatientid">If set, will show local patient id. (optional)</param>
         /// <param name="showportalstatus">If set, will include portal enrollment status in response. (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;Patient&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{Patient})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Patient>>> GetPatientByIdAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid = null, bool? ignorerestrictions = null, bool? show2015edcehrtvalues = null, bool? showallclaims = null, bool? showallpatientdepartmentstatus = null, bool? showbalancedetails = null, bool? showcustomfields = null, bool? showfullssn = null, bool? showinsurance = null, bool? showlocalpatientid = null, bool? showportalstatus = null);
         /// <summary>
         /// Get a patient CCDA informtion by ID
@@ -2380,7 +2380,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="patientId">Id of the patient for which get information</param>
-        /// <returns>Task of List&lt;PatientCcda&gt;</returns>
+        /// <returns>Task of List{PatientCcda}</returns>
         System.Threading.Tasks.Task<List<PatientCcda>> GetPatientCcdaRecordAsync (int? practiceid, string apivariant, int? patientId);
 
         /// <summary>
@@ -2393,7 +2393,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="patientId">Id of the patient for which get information</param>
-        /// <returns>Task of ApiResponse (List&lt;PatientCcda&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{PatientCcda})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<PatientCcda>>> GetPatientCcdaRecordAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId);
         /// <summary>
         /// Get encounters for the speicic patient.
@@ -2409,7 +2409,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showclinicalprovider">If set, this will show the information about the provider receiving the order. (optional)</param>
         /// <param name="showdeclinedorders">If set, include orders that were declined (optional)</param>
         /// <param name="showexternalcodes">If set, translate the order information to relevant external vocabularies, where available. Examples are medictions to RxNorm and NDC, vaccines to CVX and MVX, labs to LOINC, etc. Our mappings are not exhaustive.  (optional)</param>
-        /// <returns>Task of List&lt;EncounterDiagnosesList&gt;</returns>
+        /// <returns>Task of List{EncounterDiagnosesList}</returns>
         System.Threading.Tasks.Task<List<EncounterDiagnosesList>> GetPatientEncounterOrdersAsync (int? practiceid, string apivariant, int? encounterid, bool? allowdischargetype = null, bool? showclinicalprovider = null, bool? showdeclinedorders = null, bool? showexternalcodes = null);
 
         /// <summary>
@@ -2426,7 +2426,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showclinicalprovider">If set, this will show the information about the provider receiving the order. (optional)</param>
         /// <param name="showdeclinedorders">If set, include orders that were declined (optional)</param>
         /// <param name="showexternalcodes">If set, translate the order information to relevant external vocabularies, where available. Examples are medictions to RxNorm and NDC, vaccines to CVX and MVX, labs to LOINC, etc. Our mappings are not exhaustive.  (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;EncounterDiagnosesList&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{EncounterDiagnosesList})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<EncounterDiagnosesList>>> GetPatientEncounterOrdersAsyncWithHttpInfo (int? practiceid, string apivariant, int? encounterid, bool? allowdischargetype = null, bool? showclinicalprovider = null, bool? showdeclinedorders = null, bool? showexternalcodes = null);
         /// <summary>
         /// Get encounters for the speicic patient.
@@ -2446,7 +2446,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallstatuses">By default only encounters in OPEN, CLOSED, or REVIEW status are retrieved, with this flag, encounters aren&#x27;t filtered by status.  (optional)</param>
         /// <param name="showalltypes">Retrieve all encounter types, by default only VISIT and ORDERSONLY are retrieved. (optional)</param>
         /// <param name="showdiagnoses">Query diagnosis information for every encounter (optional)</param>
-        /// <returns>Task of List&lt;EncountersList&gt;</returns>
+        /// <returns>Task of List{EncountersList}</returns>
         System.Threading.Tasks.Task<List<EncountersList>> GetPatientEncountersAsync (int? practiceid, string apivariant, int? patientId, int? departmentid, int? appointmentid = null, int? providerid = null, string enddate = null, string startdate = null, bool? showallstatuses = null, bool? showalltypes = null, bool? showdiagnoses = null);
 
         /// <summary>
@@ -2467,7 +2467,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallstatuses">By default only encounters in OPEN, CLOSED, or REVIEW status are retrieved, with this flag, encounters aren&#x27;t filtered by status.  (optional)</param>
         /// <param name="showalltypes">Retrieve all encounter types, by default only VISIT and ORDERSONLY are retrieved. (optional)</param>
         /// <param name="showdiagnoses">Query diagnosis information for every encounter (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;EncountersList&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{EncountersList})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<EncountersList>>> GetPatientEncountersAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid, int? appointmentid = null, int? providerid = null, string enddate = null, string startdate = null, bool? showallstatuses = null, bool? showalltypes = null, bool? showdiagnoses = null);
         /// <summary>
         /// Get information about patient lab result document
@@ -2481,7 +2481,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="patientId">Id of the patient for which get information</param>
         /// <param name="labResultId">Id of the lab result</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned.  (optional)</param>
-        /// <returns>Task of List&lt;PatientLabResultDocumentDetails&gt;</returns>
+        /// <returns>Task of List{PatientLabResultDocumentDetails}</returns>
         System.Threading.Tasks.Task<List<PatientLabResultDocumentDetails>> GetPatientLabResultDocumentAsync (int? practiceid, string apivariant, int? patientId, int? labResultId, bool? showtemplate = null);
 
         /// <summary>
@@ -2496,7 +2496,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="patientId">Id of the patient for which get information</param>
         /// <param name="labResultId">Id of the lab result</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned.  (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;PatientLabResultDocumentDetails&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{PatientLabResultDocumentDetails})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<PatientLabResultDocumentDetails>>> GetPatientLabResultDocumentAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? labResultId, bool? showtemplate = null);
         /// <summary>
         /// Get a patient lab results documents
@@ -2833,7 +2833,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallproviderids">In athenaNet&#x27;s internal data structures, a single provider can be represented by multiple IDs. These IDs are used in certain external messages (e.g. HL7) and thus these IDs may need to be known by the API user as well. When set to true, a list of all of these ancillary IDs will be provided.  (optional)</param>
         /// <param name="showfederalidnumber">Include the provider&#x27;s federal ID number in results.  (optional)</param>
         /// <param name="showusualdepartmentguessthreshold">There are situations where determining where a provider \&quot;normally\&quot; practices is desired. Unfortuantely, there is no such concept in athenaNet since providers often practice in multiple locations. However, we can use some intelligence to determine this by looking back over the previous few months (90 days) to see actual practice. To enable this, set this value between 0 and 1; it is highly recommended to be at least .5. This is the ratio of appointments in a given department to the total number of appointments for that provider. A value of .5 means \&quot;the provider&#x27;s appointments are 50% in the department guessed.\&quot; Setting this to 1 would only return a department if ALL of the provider&#x27;s appointments were in one department.  (optional)</param>
-        /// <returns>Task of List&lt;Provider&gt;</returns>
+        /// <returns>Task of List{Provider}</returns>
         System.Threading.Tasks.Task<List<Provider>> GetProviderByIdAsync (int? practiceid, string apivariant, int? providerId, bool? showallproviderids = null, int? showfederalidnumber = null, decimal? showusualdepartmentguessthreshold = null);
 
         /// <summary>
@@ -2849,7 +2849,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallproviderids">In athenaNet&#x27;s internal data structures, a single provider can be represented by multiple IDs. These IDs are used in certain external messages (e.g. HL7) and thus these IDs may need to be known by the API user as well. When set to true, a list of all of these ancillary IDs will be provided.  (optional)</param>
         /// <param name="showfederalidnumber">Include the provider&#x27;s federal ID number in results.  (optional)</param>
         /// <param name="showusualdepartmentguessthreshold">There are situations where determining where a provider \&quot;normally\&quot; practices is desired. Unfortuantely, there is no such concept in athenaNet since providers often practice in multiple locations. However, we can use some intelligence to determine this by looking back over the previous few months (90 days) to see actual practice. To enable this, set this value between 0 and 1; it is highly recommended to be at least .5. This is the ratio of appointments in a given department to the total number of appointments for that provider. A value of .5 means \&quot;the provider&#x27;s appointments are 50% in the department guessed.\&quot; Setting this to 1 would only return a department if ALL of the provider&#x27;s appointments were in one department.  (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;Provider&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{Provider})</returns>
         System.Threading.Tasks.Task<ApiResponse<List<Provider>>> GetProviderByIdAsyncWithHttpInfo (int? practiceid, string apivariant, int? providerId, bool? showallproviderids = null, int? showfederalidnumber = null, decimal? showusualdepartmentguessthreshold = null);
         /// <summary>
         /// Get a providers
@@ -4074,7 +4074,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="race"></param>
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
-        /// <returns>List&lt;PatientCreatedResponse&gt;</returns>
+        /// <returns>List{PatientCreatedResponse}</returns>
         public List<PatientCreatedResponse> CreatePatient (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant)
         {
              ApiResponse<List<PatientCreatedResponse>> localVarResponse = CreatePatientWithHttpInfo(address1, address2, city, departmentid, dob, email, firstname, homephone, lastname, mobilephone, state, zip, sex, race, practiceid, apivariant);
@@ -4101,7 +4101,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="race"></param>
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
-        /// <returns>ApiResponse of List&lt;PatientCreatedResponse&gt;</returns>
+        /// <returns>ApiResponse of List{PatientCreatedResponse}</returns>
         public ApiResponse< List<PatientCreatedResponse> > CreatePatientWithHttpInfo (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant)
         {
             // verify the required parameter 'address1' is set
@@ -4236,7 +4236,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="race"></param>
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
-        /// <returns>Task of List&lt;PatientCreatedResponse&gt;</returns>
+        /// <returns>Task of List{PatientCreatedResponse}</returns>
         public async System.Threading.Tasks.Task<List<PatientCreatedResponse>> CreatePatientAsync (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant)
         {
              ApiResponse<List<PatientCreatedResponse>> localVarResponse = await CreatePatientAsyncWithHttpInfo(address1, address2, city, departmentid, dob, email, firstname, homephone, lastname, mobilephone, state, zip, sex, race, practiceid, apivariant);
@@ -4264,7 +4264,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="race"></param>
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
-        /// <returns>Task of ApiResponse (List&lt;PatientCreatedResponse&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{PatientCreatedResponse})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<PatientCreatedResponse>>> CreatePatientAsyncWithHttpInfo (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant)
         {
             // verify the required parameter 'address1' is set
@@ -7267,7 +7267,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>List&lt;Encounter&gt;</returns>
+        /// <returns>List{Encounter}</returns>
         public List<Encounter> GetEncounter (int? practiceid, string apivariant, int? encounterid)
         {
              ApiResponse<List<Encounter>> localVarResponse = GetEncounterWithHttpInfo(practiceid, apivariant, encounterid);
@@ -7281,7 +7281,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>ApiResponse of List&lt;Encounter&gt;</returns>
+        /// <returns>ApiResponse of List{Encounter}</returns>
         public ApiResponse< List<Encounter> > GetEncounterWithHttpInfo (int? practiceid, string apivariant, int? encounterid)
         {
             // verify the required parameter 'practiceid' is set
@@ -7350,7 +7350,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>Task of List&lt;Encounter&gt;</returns>
+        /// <returns>Task of List{Encounter}</returns>
         public async System.Threading.Tasks.Task<List<Encounter>> GetEncounterAsync (int? practiceid, string apivariant, int? encounterid)
         {
              ApiResponse<List<Encounter>> localVarResponse = await GetEncounterAsyncWithHttpInfo(practiceid, apivariant, encounterid);
@@ -7365,7 +7365,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>Task of ApiResponse (List&lt;Encounter&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{Encounter})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Encounter>>> GetEncounterAsyncWithHttpInfo (int? practiceid, string apivariant, int? encounterid)
         {
             // verify the required parameter 'practiceid' is set
@@ -7434,7 +7434,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>List&lt;EncounterAssesmentText&gt;</returns>
+        /// <returns>List{EncounterAssesmentText}</returns>
         public List<EncounterAssesmentText> GetEncounterAssesmentText (int? practiceid, string apivariant, int? encounterid)
         {
              ApiResponse<List<EncounterAssesmentText>> localVarResponse = GetEncounterAssesmentTextWithHttpInfo(practiceid, apivariant, encounterid);
@@ -7448,7 +7448,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>ApiResponse of List&lt;EncounterAssesmentText&gt;</returns>
+        /// <returns>ApiResponse of List{EncounterAssesmentText}</returns>
         public ApiResponse< List<EncounterAssesmentText> > GetEncounterAssesmentTextWithHttpInfo (int? practiceid, string apivariant, int? encounterid)
         {
             // verify the required parameter 'practiceid' is set
@@ -7517,7 +7517,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>Task of List&lt;EncounterAssesmentText&gt;</returns>
+        /// <returns>Task of List{EncounterAssesmentText}</returns>
         public async System.Threading.Tasks.Task<List<EncounterAssesmentText>> GetEncounterAssesmentTextAsync (int? practiceid, string apivariant, int? encounterid)
         {
              ApiResponse<List<EncounterAssesmentText>> localVarResponse = await GetEncounterAssesmentTextAsyncWithHttpInfo(practiceid, apivariant, encounterid);
@@ -7532,7 +7532,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="encounterid">The encounter ID.</param>
-        /// <returns>Task of ApiResponse (List&lt;EncounterAssesmentText&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{EncounterAssesmentText})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<EncounterAssesmentText>>> GetEncounterAssesmentTextAsyncWithHttpInfo (int? practiceid, string apivariant, int? encounterid)
         {
             // verify the required parameter 'practiceid' is set
@@ -7819,7 +7819,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showhidden">Includes the lab results and analytes marked as hidden. Hidden lab results and analytes are created when they are manually entered, for example on the qm tab or in flowsheets.  (optional)</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned. (optional)</param>
         /// <param name="startdate">Filter lab orders not individual results that are on or after this date. Example: startdate&#x3D;6/21/2015. If no startdate is specified, all prior lab orders will be included until enddate if specified.  (optional)</param>
-        /// <returns>List&lt;AnalytesList&gt;</returns>
+        /// <returns>List{AnalytesList}</returns>
         public List<AnalytesList> GetPatientAnalytes (int? practiceid, string apivariant, int? patientId, int? departmentid, int? allresultsbyencounterid = null, string analyteresultstatus = null, string enddate = null, string labresultstatus = null, bool? showabnormaldetails = null, bool? showhidden = null, bool? showtemplate = null, string startdate = null)
         {
              ApiResponse<List<AnalytesList>> localVarResponse = GetPatientAnalytesWithHttpInfo(practiceid, apivariant, patientId, departmentid, allresultsbyencounterid, analyteresultstatus, enddate, labresultstatus, showabnormaldetails, showhidden, showtemplate, startdate);
@@ -7842,7 +7842,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showhidden">Includes the lab results and analytes marked as hidden. Hidden lab results and analytes are created when they are manually entered, for example on the qm tab or in flowsheets.  (optional)</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned. (optional)</param>
         /// <param name="startdate">Filter lab orders not individual results that are on or after this date. Example: startdate&#x3D;6/21/2015. If no startdate is specified, all prior lab orders will be included until enddate if specified.  (optional)</param>
-        /// <returns>ApiResponse of List&lt;AnalytesList&gt;</returns>
+        /// <returns>ApiResponse of List{AnalytesList}</returns>
         public ApiResponse< List<AnalytesList> > GetPatientAnalytesWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid, int? allresultsbyencounterid = null, string analyteresultstatus = null, string enddate = null, string labresultstatus = null, bool? showabnormaldetails = null, bool? showhidden = null, bool? showtemplate = null, string startdate = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -7932,7 +7932,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showhidden">Includes the lab results and analytes marked as hidden. Hidden lab results and analytes are created when they are manually entered, for example on the qm tab or in flowsheets.  (optional)</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned. (optional)</param>
         /// <param name="startdate">Filter lab orders not individual results that are on or after this date. Example: startdate&#x3D;6/21/2015. If no startdate is specified, all prior lab orders will be included until enddate if specified.  (optional)</param>
-        /// <returns>Task of List&lt;AnalytesList&gt;</returns>
+        /// <returns>Task of List{AnalytesList}</returns>
         public async System.Threading.Tasks.Task<List<AnalytesList>> GetPatientAnalytesAsync (int? practiceid, string apivariant, int? patientId, int? departmentid, int? allresultsbyencounterid = null, string analyteresultstatus = null, string enddate = null, string labresultstatus = null, bool? showabnormaldetails = null, bool? showhidden = null, bool? showtemplate = null, string startdate = null)
         {
              ApiResponse<List<AnalytesList>> localVarResponse = await GetPatientAnalytesAsyncWithHttpInfo(practiceid, apivariant, patientId, departmentid, allresultsbyencounterid, analyteresultstatus, enddate, labresultstatus, showabnormaldetails, showhidden, showtemplate, startdate);
@@ -7956,7 +7956,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showhidden">Includes the lab results and analytes marked as hidden. Hidden lab results and analytes are created when they are manually entered, for example on the qm tab or in flowsheets.  (optional)</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned. (optional)</param>
         /// <param name="startdate">Filter lab orders not individual results that are on or after this date. Example: startdate&#x3D;6/21/2015. If no startdate is specified, all prior lab orders will be included until enddate if specified.  (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;AnalytesList&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{AnalytesList})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<AnalytesList>>> GetPatientAnalytesAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid, int? allresultsbyencounterid = null, string analyteresultstatus = null, string enddate = null, string labresultstatus = null, bool? showabnormaldetails = null, bool? showhidden = null, bool? showtemplate = null, string startdate = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -8048,7 +8048,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showinsurance">Include patient insurance information. (optional)</param>
         /// <param name="showlocalpatientid">If set, will show local patient id. (optional)</param>
         /// <param name="showportalstatus">If set, will include portal enrollment status in response. (optional)</param>
-        /// <returns>List&lt;Patient&gt;</returns>
+        /// <returns>List{Patient}</returns>
         public List<Patient> GetPatientById (int? practiceid, string apivariant, int? patientId, int? departmentid = null, bool? ignorerestrictions = null, bool? show2015edcehrtvalues = null, bool? showallclaims = null, bool? showallpatientdepartmentstatus = null, bool? showbalancedetails = null, bool? showcustomfields = null, bool? showfullssn = null, bool? showinsurance = null, bool? showlocalpatientid = null, bool? showportalstatus = null)
         {
              ApiResponse<List<Patient>> localVarResponse = GetPatientByIdWithHttpInfo(practiceid, apivariant, patientId, departmentid, ignorerestrictions, show2015edcehrtvalues, showallclaims, showallpatientdepartmentstatus, showbalancedetails, showcustomfields, showfullssn, showinsurance, showlocalpatientid, showportalstatus);
@@ -8073,7 +8073,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showinsurance">Include patient insurance information. (optional)</param>
         /// <param name="showlocalpatientid">If set, will show local patient id. (optional)</param>
         /// <param name="showportalstatus">If set, will include portal enrollment status in response. (optional)</param>
-        /// <returns>ApiResponse of List&lt;Patient&gt;</returns>
+        /// <returns>ApiResponse of List{Patient}</returns>
         public ApiResponse< List<Patient> > GetPatientByIdWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid = null, bool? ignorerestrictions = null, bool? show2015edcehrtvalues = null, bool? showallclaims = null, bool? showallpatientdepartmentstatus = null, bool? showbalancedetails = null, bool? showcustomfields = null, bool? showfullssn = null, bool? showinsurance = null, bool? showlocalpatientid = null, bool? showportalstatus = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -8164,7 +8164,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showinsurance">Include patient insurance information. (optional)</param>
         /// <param name="showlocalpatientid">If set, will show local patient id. (optional)</param>
         /// <param name="showportalstatus">If set, will include portal enrollment status in response. (optional)</param>
-        /// <returns>Task of List&lt;Patient&gt;</returns>
+        /// <returns>Task of List{Patient}</returns>
         public async System.Threading.Tasks.Task<List<Patient>> GetPatientByIdAsync (int? practiceid, string apivariant, int? patientId, int? departmentid = null, bool? ignorerestrictions = null, bool? show2015edcehrtvalues = null, bool? showallclaims = null, bool? showallpatientdepartmentstatus = null, bool? showbalancedetails = null, bool? showcustomfields = null, bool? showfullssn = null, bool? showinsurance = null, bool? showlocalpatientid = null, bool? showportalstatus = null)
         {
              ApiResponse<List<Patient>> localVarResponse = await GetPatientByIdAsyncWithHttpInfo(practiceid, apivariant, patientId, departmentid, ignorerestrictions, show2015edcehrtvalues, showallclaims, showallpatientdepartmentstatus, showbalancedetails, showcustomfields, showfullssn, showinsurance, showlocalpatientid, showportalstatus);
@@ -8190,7 +8190,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showinsurance">Include patient insurance information. (optional)</param>
         /// <param name="showlocalpatientid">If set, will show local patient id. (optional)</param>
         /// <param name="showportalstatus">If set, will include portal enrollment status in response. (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;Patient&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{Patient})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Patient>>> GetPatientByIdAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid = null, bool? ignorerestrictions = null, bool? show2015edcehrtvalues = null, bool? showallclaims = null, bool? showallpatientdepartmentstatus = null, bool? showbalancedetails = null, bool? showcustomfields = null, bool? showfullssn = null, bool? showinsurance = null, bool? showlocalpatientid = null, bool? showportalstatus = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -8270,7 +8270,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="patientId">Id of the patient for which get information</param>
-        /// <returns>List&lt;PatientCcda&gt;</returns>
+        /// <returns>List{PatientCcda}</returns>
         public List<PatientCcda> GetPatientCcdaRecord (int? practiceid, string apivariant, int? patientId)
         {
              ApiResponse<List<PatientCcda>> localVarResponse = GetPatientCcdaRecordWithHttpInfo(practiceid, apivariant, patientId);
@@ -8284,7 +8284,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="patientId">Id of the patient for which get information</param>
-        /// <returns>ApiResponse of List&lt;PatientCcda&gt;</returns>
+        /// <returns>ApiResponse of List{PatientCcda}</returns>
         public ApiResponse< List<PatientCcda> > GetPatientCcdaRecordWithHttpInfo (int? practiceid, string apivariant, int? patientId)
         {
             // verify the required parameter 'practiceid' is set
@@ -8353,7 +8353,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="patientId">Id of the patient for which get information</param>
-        /// <returns>Task of List&lt;PatientCcda&gt;</returns>
+        /// <returns>Task of List{PatientCcda}</returns>
         public async System.Threading.Tasks.Task<List<PatientCcda>> GetPatientCcdaRecordAsync (int? practiceid, string apivariant, int? patientId)
         {
              ApiResponse<List<PatientCcda>> localVarResponse = await GetPatientCcdaRecordAsyncWithHttpInfo(practiceid, apivariant, patientId);
@@ -8368,7 +8368,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="practiceid">Id of the practice</param>
         /// <param name="apivariant">Variant of the API</param>
         /// <param name="patientId">Id of the patient for which get information</param>
-        /// <returns>Task of ApiResponse (List&lt;PatientCcda&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{PatientCcda})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<PatientCcda>>> GetPatientCcdaRecordAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId)
         {
             // verify the required parameter 'practiceid' is set
@@ -8441,7 +8441,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showclinicalprovider">If set, this will show the information about the provider receiving the order. (optional)</param>
         /// <param name="showdeclinedorders">If set, include orders that were declined (optional)</param>
         /// <param name="showexternalcodes">If set, translate the order information to relevant external vocabularies, where available. Examples are medictions to RxNorm and NDC, vaccines to CVX and MVX, labs to LOINC, etc. Our mappings are not exhaustive.  (optional)</param>
-        /// <returns>List&lt;EncounterDiagnosesList&gt;</returns>
+        /// <returns>List{EncounterDiagnosesList}</returns>
         public List<EncounterDiagnosesList> GetPatientEncounterOrders (int? practiceid, string apivariant, int? encounterid, bool? allowdischargetype = null, bool? showclinicalprovider = null, bool? showdeclinedorders = null, bool? showexternalcodes = null)
         {
              ApiResponse<List<EncounterDiagnosesList>> localVarResponse = GetPatientEncounterOrdersWithHttpInfo(practiceid, apivariant, encounterid, allowdischargetype, showclinicalprovider, showdeclinedorders, showexternalcodes);
@@ -8459,7 +8459,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showclinicalprovider">If set, this will show the information about the provider receiving the order. (optional)</param>
         /// <param name="showdeclinedorders">If set, include orders that were declined (optional)</param>
         /// <param name="showexternalcodes">If set, translate the order information to relevant external vocabularies, where available. Examples are medictions to RxNorm and NDC, vaccines to CVX and MVX, labs to LOINC, etc. Our mappings are not exhaustive.  (optional)</param>
-        /// <returns>ApiResponse of List&lt;EncounterDiagnosesList&gt;</returns>
+        /// <returns>ApiResponse of List{EncounterDiagnosesList}</returns>
         public ApiResponse< List<EncounterDiagnosesList> > GetPatientEncounterOrdersWithHttpInfo (int? practiceid, string apivariant, int? encounterid, bool? allowdischargetype = null, bool? showclinicalprovider = null, bool? showdeclinedorders = null, bool? showexternalcodes = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -8536,7 +8536,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showclinicalprovider">If set, this will show the information about the provider receiving the order. (optional)</param>
         /// <param name="showdeclinedorders">If set, include orders that were declined (optional)</param>
         /// <param name="showexternalcodes">If set, translate the order information to relevant external vocabularies, where available. Examples are medictions to RxNorm and NDC, vaccines to CVX and MVX, labs to LOINC, etc. Our mappings are not exhaustive.  (optional)</param>
-        /// <returns>Task of List&lt;EncounterDiagnosesList&gt;</returns>
+        /// <returns>Task of List{EncounterDiagnosesList}</returns>
         public async System.Threading.Tasks.Task<List<EncounterDiagnosesList>> GetPatientEncounterOrdersAsync (int? practiceid, string apivariant, int? encounterid, bool? allowdischargetype = null, bool? showclinicalprovider = null, bool? showdeclinedorders = null, bool? showexternalcodes = null)
         {
              ApiResponse<List<EncounterDiagnosesList>> localVarResponse = await GetPatientEncounterOrdersAsyncWithHttpInfo(practiceid, apivariant, encounterid, allowdischargetype, showclinicalprovider, showdeclinedorders, showexternalcodes);
@@ -8555,7 +8555,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showclinicalprovider">If set, this will show the information about the provider receiving the order. (optional)</param>
         /// <param name="showdeclinedorders">If set, include orders that were declined (optional)</param>
         /// <param name="showexternalcodes">If set, translate the order information to relevant external vocabularies, where available. Examples are medictions to RxNorm and NDC, vaccines to CVX and MVX, labs to LOINC, etc. Our mappings are not exhaustive.  (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;EncounterDiagnosesList&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{EncounterDiagnosesList})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<EncounterDiagnosesList>>> GetPatientEncounterOrdersAsyncWithHttpInfo (int? practiceid, string apivariant, int? encounterid, bool? allowdischargetype = null, bool? showclinicalprovider = null, bool? showdeclinedorders = null, bool? showexternalcodes = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -8636,7 +8636,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallstatuses">By default only encounters in OPEN, CLOSED, or REVIEW status are retrieved, with this flag, encounters aren&#x27;t filtered by status.  (optional)</param>
         /// <param name="showalltypes">Retrieve all encounter types, by default only VISIT and ORDERSONLY are retrieved. (optional)</param>
         /// <param name="showdiagnoses">Query diagnosis information for every encounter (optional)</param>
-        /// <returns>List&lt;EncountersList&gt;</returns>
+        /// <returns>List{EncountersList}</returns>
         public List<EncountersList> GetPatientEncounters (int? practiceid, string apivariant, int? patientId, int? departmentid, int? appointmentid = null, int? providerid = null, string enddate = null, string startdate = null, bool? showallstatuses = null, bool? showalltypes = null, bool? showdiagnoses = null)
         {
              ApiResponse<List<EncountersList>> localVarResponse = GetPatientEncountersWithHttpInfo(practiceid, apivariant, patientId, departmentid, appointmentid, providerid, enddate, startdate, showallstatuses, showalltypes, showdiagnoses);
@@ -8658,7 +8658,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallstatuses">By default only encounters in OPEN, CLOSED, or REVIEW status are retrieved, with this flag, encounters aren&#x27;t filtered by status.  (optional)</param>
         /// <param name="showalltypes">Retrieve all encounter types, by default only VISIT and ORDERSONLY are retrieved. (optional)</param>
         /// <param name="showdiagnoses">Query diagnosis information for every encounter (optional)</param>
-        /// <returns>ApiResponse of List&lt;EncountersList&gt;</returns>
+        /// <returns>ApiResponse of List{EncountersList}</returns>
         public ApiResponse< List<EncountersList> > GetPatientEncountersWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid, int? appointmentid = null, int? providerid = null, string enddate = null, string startdate = null, bool? showallstatuses = null, bool? showalltypes = null, bool? showdiagnoses = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -8746,7 +8746,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallstatuses">By default only encounters in OPEN, CLOSED, or REVIEW status are retrieved, with this flag, encounters aren&#x27;t filtered by status.  (optional)</param>
         /// <param name="showalltypes">Retrieve all encounter types, by default only VISIT and ORDERSONLY are retrieved. (optional)</param>
         /// <param name="showdiagnoses">Query diagnosis information for every encounter (optional)</param>
-        /// <returns>Task of List&lt;EncountersList&gt;</returns>
+        /// <returns>Task of List{EncountersList}</returns>
         public async System.Threading.Tasks.Task<List<EncountersList>> GetPatientEncountersAsync (int? practiceid, string apivariant, int? patientId, int? departmentid, int? appointmentid = null, int? providerid = null, string enddate = null, string startdate = null, bool? showallstatuses = null, bool? showalltypes = null, bool? showdiagnoses = null)
         {
              ApiResponse<List<EncountersList>> localVarResponse = await GetPatientEncountersAsyncWithHttpInfo(practiceid, apivariant, patientId, departmentid, appointmentid, providerid, enddate, startdate, showallstatuses, showalltypes, showdiagnoses);
@@ -8769,7 +8769,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallstatuses">By default only encounters in OPEN, CLOSED, or REVIEW status are retrieved, with this flag, encounters aren&#x27;t filtered by status.  (optional)</param>
         /// <param name="showalltypes">Retrieve all encounter types, by default only VISIT and ORDERSONLY are retrieved. (optional)</param>
         /// <param name="showdiagnoses">Query diagnosis information for every encounter (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;EncountersList&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{EncountersList})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<EncountersList>>> GetPatientEncountersAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? departmentid, int? appointmentid = null, int? providerid = null, string enddate = null, string startdate = null, bool? showallstatuses = null, bool? showalltypes = null, bool? showdiagnoses = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -8851,7 +8851,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="patientId">Id of the patient for which get information</param>
         /// <param name="labResultId">Id of the lab result</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned.  (optional)</param>
-        /// <returns>List&lt;PatientLabResultDocumentDetails&gt;</returns>
+        /// <returns>List{PatientLabResultDocumentDetails}</returns>
         public List<PatientLabResultDocumentDetails> GetPatientLabResultDocument (int? practiceid, string apivariant, int? patientId, int? labResultId, bool? showtemplate = null)
         {
              ApiResponse<List<PatientLabResultDocumentDetails>> localVarResponse = GetPatientLabResultDocumentWithHttpInfo(practiceid, apivariant, patientId, labResultId, showtemplate);
@@ -8867,7 +8867,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="patientId">Id of the patient for which get information</param>
         /// <param name="labResultId">Id of the lab result</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned.  (optional)</param>
-        /// <returns>ApiResponse of List&lt;PatientLabResultDocumentDetails&gt;</returns>
+        /// <returns>ApiResponse of List{PatientLabResultDocumentDetails}</returns>
         public ApiResponse< List<PatientLabResultDocumentDetails> > GetPatientLabResultDocumentWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? labResultId, bool? showtemplate = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -8943,7 +8943,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="patientId">Id of the patient for which get information</param>
         /// <param name="labResultId">Id of the lab result</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned.  (optional)</param>
-        /// <returns>Task of List&lt;PatientLabResultDocumentDetails&gt;</returns>
+        /// <returns>Task of List{PatientLabResultDocumentDetails}</returns>
         public async System.Threading.Tasks.Task<List<PatientLabResultDocumentDetails>> GetPatientLabResultDocumentAsync (int? practiceid, string apivariant, int? patientId, int? labResultId, bool? showtemplate = null)
         {
              ApiResponse<List<PatientLabResultDocumentDetails>> localVarResponse = await GetPatientLabResultDocumentAsyncWithHttpInfo(practiceid, apivariant, patientId, labResultId, showtemplate);
@@ -8960,7 +8960,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="patientId">Id of the patient for which get information</param>
         /// <param name="labResultId">Id of the lab result</param>
         /// <param name="showtemplate">If true, interpretation template added to the document is also returned.  (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;PatientLabResultDocumentDetails&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{PatientLabResultDocumentDetails})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<PatientLabResultDocumentDetails>>> GetPatientLabResultDocumentAsyncWithHttpInfo (int? practiceid, string apivariant, int? patientId, int? labResultId, bool? showtemplate = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -10953,7 +10953,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallproviderids">In athenaNet&#x27;s internal data structures, a single provider can be represented by multiple IDs. These IDs are used in certain external messages (e.g. HL7) and thus these IDs may need to be known by the API user as well. When set to true, a list of all of these ancillary IDs will be provided.  (optional)</param>
         /// <param name="showfederalidnumber">Include the provider&#x27;s federal ID number in results.  (optional)</param>
         /// <param name="showusualdepartmentguessthreshold">There are situations where determining where a provider \&quot;normally\&quot; practices is desired. Unfortuantely, there is no such concept in athenaNet since providers often practice in multiple locations. However, we can use some intelligence to determine this by looking back over the previous few months (90 days) to see actual practice. To enable this, set this value between 0 and 1; it is highly recommended to be at least .5. This is the ratio of appointments in a given department to the total number of appointments for that provider. A value of .5 means \&quot;the provider&#x27;s appointments are 50% in the department guessed.\&quot; Setting this to 1 would only return a department if ALL of the provider&#x27;s appointments were in one department.  (optional)</param>
-        /// <returns>List&lt;Provider&gt;</returns>
+        /// <returns>List{Provider}</returns>
         public List<Provider> GetProviderById (int? practiceid, string apivariant, int? providerId, bool? showallproviderids = null, int? showfederalidnumber = null, decimal? showusualdepartmentguessthreshold = null)
         {
              ApiResponse<List<Provider>> localVarResponse = GetProviderByIdWithHttpInfo(practiceid, apivariant, providerId, showallproviderids, showfederalidnumber, showusualdepartmentguessthreshold);
@@ -10970,7 +10970,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallproviderids">In athenaNet&#x27;s internal data structures, a single provider can be represented by multiple IDs. These IDs are used in certain external messages (e.g. HL7) and thus these IDs may need to be known by the API user as well. When set to true, a list of all of these ancillary IDs will be provided.  (optional)</param>
         /// <param name="showfederalidnumber">Include the provider&#x27;s federal ID number in results.  (optional)</param>
         /// <param name="showusualdepartmentguessthreshold">There are situations where determining where a provider \&quot;normally\&quot; practices is desired. Unfortuantely, there is no such concept in athenaNet since providers often practice in multiple locations. However, we can use some intelligence to determine this by looking back over the previous few months (90 days) to see actual practice. To enable this, set this value between 0 and 1; it is highly recommended to be at least .5. This is the ratio of appointments in a given department to the total number of appointments for that provider. A value of .5 means \&quot;the provider&#x27;s appointments are 50% in the department guessed.\&quot; Setting this to 1 would only return a department if ALL of the provider&#x27;s appointments were in one department.  (optional)</param>
-        /// <returns>ApiResponse of List&lt;Provider&gt;</returns>
+        /// <returns>ApiResponse of List{Provider}</returns>
         public ApiResponse< List<Provider> > GetProviderByIdWithHttpInfo (int? practiceid, string apivariant, int? providerId, bool? showallproviderids = null, int? showfederalidnumber = null, decimal? showusualdepartmentguessthreshold = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -11045,7 +11045,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallproviderids">In athenaNet&#x27;s internal data structures, a single provider can be represented by multiple IDs. These IDs are used in certain external messages (e.g. HL7) and thus these IDs may need to be known by the API user as well. When set to true, a list of all of these ancillary IDs will be provided.  (optional)</param>
         /// <param name="showfederalidnumber">Include the provider&#x27;s federal ID number in results.  (optional)</param>
         /// <param name="showusualdepartmentguessthreshold">There are situations where determining where a provider \&quot;normally\&quot; practices is desired. Unfortuantely, there is no such concept in athenaNet since providers often practice in multiple locations. However, we can use some intelligence to determine this by looking back over the previous few months (90 days) to see actual practice. To enable this, set this value between 0 and 1; it is highly recommended to be at least .5. This is the ratio of appointments in a given department to the total number of appointments for that provider. A value of .5 means \&quot;the provider&#x27;s appointments are 50% in the department guessed.\&quot; Setting this to 1 would only return a department if ALL of the provider&#x27;s appointments were in one department.  (optional)</param>
-        /// <returns>Task of List&lt;Provider&gt;</returns>
+        /// <returns>Task of List{Provider}</returns>
         public async System.Threading.Tasks.Task<List<Provider>> GetProviderByIdAsync (int? practiceid, string apivariant, int? providerId, bool? showallproviderids = null, int? showfederalidnumber = null, decimal? showusualdepartmentguessthreshold = null)
         {
              ApiResponse<List<Provider>> localVarResponse = await GetProviderByIdAsyncWithHttpInfo(practiceid, apivariant, providerId, showallproviderids, showfederalidnumber, showusualdepartmentguessthreshold);
@@ -11063,7 +11063,7 @@ namespace Jacrys.AthenaSharp.Api
         /// <param name="showallproviderids">In athenaNet&#x27;s internal data structures, a single provider can be represented by multiple IDs. These IDs are used in certain external messages (e.g. HL7) and thus these IDs may need to be known by the API user as well. When set to true, a list of all of these ancillary IDs will be provided.  (optional)</param>
         /// <param name="showfederalidnumber">Include the provider&#x27;s federal ID number in results.  (optional)</param>
         /// <param name="showusualdepartmentguessthreshold">There are situations where determining where a provider \&quot;normally\&quot; practices is desired. Unfortuantely, there is no such concept in athenaNet since providers often practice in multiple locations. However, we can use some intelligence to determine this by looking back over the previous few months (90 days) to see actual practice. To enable this, set this value between 0 and 1; it is highly recommended to be at least .5. This is the ratio of appointments in a given department to the total number of appointments for that provider. A value of .5 means \&quot;the provider&#x27;s appointments are 50% in the department guessed.\&quot; Setting this to 1 would only return a department if ALL of the provider&#x27;s appointments were in one department.  (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;Provider&gt;)</returns>
+        /// <returns>Task of ApiResponse (List{Provider})</returns>
         public async System.Threading.Tasks.Task<ApiResponse<List<Provider>>> GetProviderByIdAsyncWithHttpInfo (int? practiceid, string apivariant, int? providerId, bool? showallproviderids = null, int? showfederalidnumber = null, decimal? showusualdepartmentguessthreshold = null)
         {
             // verify the required parameter 'practiceid' is set
@@ -11463,7 +11463,7 @@ namespace Jacrys.AthenaSharp.Api
             if (appointmenttime == null)
                 throw new ApiException(400, "Missing required parameter 'appointmenttime' when calling DefaultApi->OpenNewAppointment");
             // verify the required parameter 'appointmenttypeid' is set
-            if (appointmenttypeid == null)
+            if (appointmenttypeid == null && reasonid == null)
                 throw new ApiException(400, "Missing required parameter 'appointmenttypeid' when calling DefaultApi->OpenNewAppointment");
             // verify the required parameter 'departmentid' is set
             if (departmentid == null)
@@ -11472,7 +11472,7 @@ namespace Jacrys.AthenaSharp.Api
             if (providerid == null)
                 throw new ApiException(400, "Missing required parameter 'providerid' when calling DefaultApi->OpenNewAppointment");
             // verify the required parameter 'reasonid' is set
-            if (reasonid == null)
+            if (reasonid == null && appointmenttypeid == null)
                 throw new ApiException(400, "Missing required parameter 'reasonid' when calling DefaultApi->OpenNewAppointment");
             // verify the required parameter 'practiceid' is set
             if (practiceid == null)
@@ -11536,5 +11536,329 @@ namespace Jacrys.AthenaSharp.Api
                 (InlineResponse200) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse200)));
         }
 
+        /// <summary>
+        /// Update patient
+        /// </summary>
+        /// <exception cref="Jacrys.AthenaSharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="address1"></param>
+        /// <param name="address2"></param>
+        /// <param name="city"></param>
+        /// <param name="departmentid"></param>
+        /// <param name="dob"></param>
+        /// <param name="email"></param>
+        /// <param name="firstname"></param>
+        /// <param name="homephone"></param>
+        /// <param name="lastname"></param>
+        /// <param name="mobilephone"></param>
+        /// <param name="state"></param>
+        /// <param name="zip"></param>
+        /// <param name="sex"></param>
+        /// <param name="race"></param>
+        /// <param name="practiceid">Id of the practice</param>
+        /// <param name="apivariant">Variant of the API</param>
+        /// <returns>List{PatientCreatedResponse}</returns>
+        public List<PatientCreatedResponse> UpdatePatient (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant)
+        {
+             ApiResponse<List<PatientCreatedResponse>> localVarResponse = UpdatePatientWithHttpInfo(address1, address2, city, departmentid, dob, email, firstname, homephone, lastname, mobilephone, state, zip, sex, race, practiceid, apivariant);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Update patient
+        /// </summary>
+        /// <exception cref="Jacrys.AthenaSharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="address1"></param>
+        /// <param name="address2"></param>
+        /// <param name="city"></param>
+        /// <param name="departmentid"></param>
+        /// <param name="dob"></param>
+        /// <param name="email"></param>
+        /// <param name="firstname"></param>
+        /// <param name="homephone"></param>
+        /// <param name="lastname"></param>
+        /// <param name="mobilephone"></param>
+        /// <param name="state"></param>
+        /// <param name="zip"></param>
+        /// <param name="sex"></param>
+        /// <param name="race"></param>
+        /// <param name="practiceid">Id of the practice</param>
+        /// <param name="apivariant">Variant of the API</param>
+        /// <returns>ApiResponse of List{PatientCreatedResponse}</returns>
+        public ApiResponse< List<PatientCreatedResponse> > UpdatePatientWithHttpInfo (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant)
+        {
+            // verify the required parameter 'address1' is set
+            if (address1 == null)
+                throw new ApiException(400, "Missing required parameter 'address1' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'address2' is set
+            if (address2 == null)
+                throw new ApiException(400, "Missing required parameter 'address2' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'city' is set
+            if (city == null)
+                throw new ApiException(400, "Missing required parameter 'city' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'departmentid' is set
+            if (departmentid == null)
+                throw new ApiException(400, "Missing required parameter 'departmentid' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'dob' is set
+            if (dob == null)
+                throw new ApiException(400, "Missing required parameter 'dob' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'email' is set
+            if (email == null)
+                throw new ApiException(400, "Missing required parameter 'email' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'firstname' is set
+            if (firstname == null)
+                throw new ApiException(400, "Missing required parameter 'firstname' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'homephone' is set
+            if (homephone == null)
+                throw new ApiException(400, "Missing required parameter 'homephone' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'lastname' is set
+            if (lastname == null)
+                throw new ApiException(400, "Missing required parameter 'lastname' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'mobilephone' is set
+            if (mobilephone == null)
+                throw new ApiException(400, "Missing required parameter 'mobilephone' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'state' is set
+            if (state == null)
+                throw new ApiException(400, "Missing required parameter 'state' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'zip' is set
+            if (zip == null)
+                throw new ApiException(400, "Missing required parameter 'zip' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'sex' is set
+            if (sex == null)
+                throw new ApiException(400, "Missing required parameter 'sex' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'race' is set
+            if (race == null)
+                throw new ApiException(400, "Missing required parameter 'race' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'practiceid' is set
+            if (practiceid == null)
+                throw new ApiException(400, "Missing required parameter 'practiceid' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'apivariant' is set
+            if (apivariant == null)
+                throw new ApiException(400, "Missing required parameter 'apivariant' when calling DefaultApi->CreatePatient");
+
+            var localVarPath = "/{apivariant}/{practiceid}/patients";
+            var localVarPathParams = new Dictionary<string, string>();
+            var localVarQueryParams = new List<KeyValuePair<string, string>>();
+            var localVarHeaderParams = new Dictionary<string, string>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<string, string>();
+            var localVarFileParams = new Dictionary<string, FileParameter>();
+			object localVarPostBody = null;
+
+			// to determine the Content-Type header
+			string[] localVarHttpContentTypes = new string[] {
+                "application/x-www-form-urlencoded"
+            };
+			string localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+			// to determine the Accept header
+			string[] localVarHttpHeaderAccepts = new string[] {
+                "application/json"
+            };
+			string localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (practiceid != null) localVarPathParams.Add("practiceid", this.Configuration.ApiClient.ParameterToString(practiceid)); // path parameter
+            if (apivariant != null) localVarPathParams.Add("apivariant", this.Configuration.ApiClient.ParameterToString(apivariant)); // path parameter
+            if (address1 != null) localVarFormParams.Add("address1", this.Configuration.ApiClient.ParameterToString(address1)); // form parameter
+            if (address2 != null) localVarFormParams.Add("address2", this.Configuration.ApiClient.ParameterToString(address2)); // form parameter
+            if (city != null) localVarFormParams.Add("city", this.Configuration.ApiClient.ParameterToString(city)); // form parameter
+            if (departmentid != null) localVarFormParams.Add("departmentid", this.Configuration.ApiClient.ParameterToString(departmentid)); // form parameter
+            if (dob != null) localVarFormParams.Add("dob", this.Configuration.ApiClient.ParameterToString(dob)); // form parameter
+            if (email != null) localVarFormParams.Add("email", this.Configuration.ApiClient.ParameterToString(email)); // form parameter
+            if (firstname != null) localVarFormParams.Add("firstname", this.Configuration.ApiClient.ParameterToString(firstname)); // form parameter
+            if (homephone != null) localVarFormParams.Add("homephone", this.Configuration.ApiClient.ParameterToString(homephone)); // form parameter
+            if (lastname != null) localVarFormParams.Add("lastname", this.Configuration.ApiClient.ParameterToString(lastname)); // form parameter
+            if (mobilephone != null) localVarFormParams.Add("mobilephone", this.Configuration.ApiClient.ParameterToString(mobilephone)); // form parameter
+            if (state != null) localVarFormParams.Add("state", this.Configuration.ApiClient.ParameterToString(state)); // form parameter
+            if (zip != null) localVarFormParams.Add("zip", this.Configuration.ApiClient.ParameterToString(zip)); // form parameter
+            if (sex != null) localVarFormParams.Add("sex", this.Configuration.ApiClient.ParameterToString(sex)); // form parameter
+            if (race != null) localVarFormParams.Add("race", this.Configuration.ApiClient.ParameterToString(race)); // form parameter
+            // authentication (defaultSecurityScheme) required
+            // oauth required
+            if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + this.Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdatePatient", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<PatientCreatedResponse>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (List<PatientCreatedResponse>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PatientCreatedResponse>)));
+        }
+
+        /// <summary>
+        /// Update patient
+        /// </summary>
+        /// <exception cref="Jacrys.AthenaSharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="address1"></param>
+        /// <param name="address2"></param>
+        /// <param name="city"></param>
+        /// <param name="departmentid"></param>
+        /// <param name="dob"></param>
+        /// <param name="email"></param>
+        /// <param name="firstname"></param>
+        /// <param name="homephone"></param>
+        /// <param name="lastname"></param>
+        /// <param name="mobilephone"></param>
+        /// <param name="state"></param>
+        /// <param name="zip"></param>
+        /// <param name="sex"></param>
+        /// <param name="race"></param>
+        /// <param name="practiceid">Id of the practice</param>
+        /// <param name="apivariant">Variant of the API</param>
+        /// <returns>Task of List{PatientCreatedResponse}</returns>
+        public async System.Threading.Tasks.Task<List<PatientCreatedResponse>> UpdatePatientAsync (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant)
+        {
+             ApiResponse<List<PatientCreatedResponse>> localVarResponse = await UpdatePatientAsyncWithHttpInfo(address1, address2, city, departmentid, dob, email, firstname, homephone, lastname, mobilephone, state, zip, sex, race, practiceid, apivariant);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Update patient
+        /// </summary>
+        /// <exception cref="Jacrys.AthenaSharp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="address1"></param>
+        /// <param name="address2"></param>
+        /// <param name="city"></param>
+        /// <param name="departmentid"></param>
+        /// <param name="dob"></param>
+        /// <param name="email"></param>
+        /// <param name="firstname"></param>
+        /// <param name="homephone"></param>
+        /// <param name="lastname"></param>
+        /// <param name="mobilephone"></param>
+        /// <param name="state"></param>
+        /// <param name="zip"></param>
+        /// <param name="sex"></param>
+        /// <param name="race"></param>
+        /// <param name="practiceid">Id of the practice</param>
+        /// <param name="apivariant">Variant of the API</param>
+        /// <returns>Task of ApiResponse (List{PatientCreatedResponse})</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<PatientCreatedResponse>>> UpdatePatientAsyncWithHttpInfo (string address1, string address2, string city, int? departmentid, string dob, string email, string firstname, string homephone, string lastname, string mobilephone, string state, string zip, string sex, string race, int? practiceid, string apivariant)
+        {
+            // verify the required parameter 'address1' is set
+            if (address1 == null)
+                throw new ApiException(400, "Missing required parameter 'address1' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'address2' is set
+            if (address2 == null)
+                throw new ApiException(400, "Missing required parameter 'address2' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'city' is set
+            if (city == null)
+                throw new ApiException(400, "Missing required parameter 'city' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'departmentid' is set
+            if (departmentid == null)
+                throw new ApiException(400, "Missing required parameter 'departmentid' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'dob' is set
+            if (dob == null)
+                throw new ApiException(400, "Missing required parameter 'dob' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'email' is set
+            if (email == null)
+                throw new ApiException(400, "Missing required parameter 'email' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'firstname' is set
+            if (firstname == null)
+                throw new ApiException(400, "Missing required parameter 'firstname' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'homephone' is set
+            if (homephone == null)
+                throw new ApiException(400, "Missing required parameter 'homephone' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'lastname' is set
+            if (lastname == null)
+                throw new ApiException(400, "Missing required parameter 'lastname' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'mobilephone' is set
+            if (mobilephone == null)
+                throw new ApiException(400, "Missing required parameter 'mobilephone' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'state' is set
+            if (state == null)
+                throw new ApiException(400, "Missing required parameter 'state' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'zip' is set
+            if (zip == null)
+                throw new ApiException(400, "Missing required parameter 'zip' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'sex' is set
+            if (sex == null)
+                throw new ApiException(400, "Missing required parameter 'sex' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'race' is set
+            if (race == null)
+                throw new ApiException(400, "Missing required parameter 'race' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'practiceid' is set
+            if (practiceid == null)
+                throw new ApiException(400, "Missing required parameter 'practiceid' when calling DefaultApi->CreatePatient");
+            // verify the required parameter 'apivariant' is set
+            if (apivariant == null)
+                throw new ApiException(400, "Missing required parameter 'apivariant' when calling DefaultApi->CreatePatient");
+
+            var localVarPath = "/{apivariant}/{practiceid}/patients";
+            var localVarPathParams = new Dictionary<string, string>();
+            var localVarQueryParams = new List<KeyValuePair<string, string>>();
+            var localVarHeaderParams = new Dictionary<string, string>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<string, string>();
+            var localVarFileParams = new Dictionary<string, FileParameter>();
+			object localVarPostBody = null;
+
+			// to determine the Content-Type header
+			string[] localVarHttpContentTypes = new string[] {
+                "application/x-www-form-urlencoded"
+            };
+			string localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+			// to determine the Accept header
+			string[] localVarHttpHeaderAccepts = new string[] {
+                "application/json"
+            };
+			string localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (practiceid != null) localVarPathParams.Add("practiceid", this.Configuration.ApiClient.ParameterToString(practiceid)); // path parameter
+            if (apivariant != null) localVarPathParams.Add("apivariant", this.Configuration.ApiClient.ParameterToString(apivariant)); // path parameter
+            if (address1 != null) localVarFormParams.Add("address1", this.Configuration.ApiClient.ParameterToString(address1)); // form parameter
+            if (address2 != null) localVarFormParams.Add("address2", this.Configuration.ApiClient.ParameterToString(address2)); // form parameter
+            if (city != null) localVarFormParams.Add("city", this.Configuration.ApiClient.ParameterToString(city)); // form parameter
+            if (departmentid != null) localVarFormParams.Add("departmentid", this.Configuration.ApiClient.ParameterToString(departmentid)); // form parameter
+            if (dob != null) localVarFormParams.Add("dob", this.Configuration.ApiClient.ParameterToString(dob)); // form parameter
+            if (email != null) localVarFormParams.Add("email", this.Configuration.ApiClient.ParameterToString(email)); // form parameter
+            if (firstname != null) localVarFormParams.Add("firstname", this.Configuration.ApiClient.ParameterToString(firstname)); // form parameter
+            if (homephone != null) localVarFormParams.Add("homephone", this.Configuration.ApiClient.ParameterToString(homephone)); // form parameter
+            if (lastname != null) localVarFormParams.Add("lastname", this.Configuration.ApiClient.ParameterToString(lastname)); // form parameter
+            if (mobilephone != null) localVarFormParams.Add("mobilephone", this.Configuration.ApiClient.ParameterToString(mobilephone)); // form parameter
+            if (state != null) localVarFormParams.Add("state", this.Configuration.ApiClient.ParameterToString(state)); // form parameter
+            if (zip != null) localVarFormParams.Add("zip", this.Configuration.ApiClient.ParameterToString(zip)); // form parameter
+            if (sex != null) localVarFormParams.Add("sex", this.Configuration.ApiClient.ParameterToString(sex)); // form parameter
+            if (race != null) localVarFormParams.Add("race", this.Configuration.ApiClient.ParameterToString(race)); // form parameter
+            // authentication (defaultSecurityScheme) required
+            // oauth required
+            if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + this.Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UpdatePatient", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<PatientCreatedResponse>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (List<PatientCreatedResponse>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<PatientCreatedResponse>)));
+        }
     }
 }
