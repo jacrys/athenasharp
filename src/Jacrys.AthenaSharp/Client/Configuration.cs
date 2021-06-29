@@ -28,7 +28,7 @@ namespace Jacrys.AthenaSharp.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "1.2.1";
+        public const string Version = "1.2.4";
 
         /// <summary>
         /// Identifier for ISO 8601 DateTime Format
@@ -438,7 +438,7 @@ namespace Jacrys.AthenaSharp.Client
             report += "    OS: " + System.Environment.OSVersion + "\n";
             report += "    .NET Framework Version: " + System.Environment.Version  + "\n";
             report += "    Version of the API: 2.0.0\n";
-            report += "    SDK Package Version: 1.2.1\n";
+            report += "    SDK Package Version: 1.2.4\n";
 
             return report;
         }
