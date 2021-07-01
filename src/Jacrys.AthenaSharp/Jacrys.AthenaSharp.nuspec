@@ -18,7 +18,7 @@
         <developmentDependency>false</developmentDependency>
         <readme>..\README.md</readme>
         <summary>Provides an SDK to access the athenahealth MDP API</summary>
-        <releaseNotes>V 1.2.4 - fixed Book Appointment API call</releaseNotes>
+        <releaseNotes>V 1.2.5 - fixed Book Appointment API call</releaseNotes>
 
         <repository type="git" url="https://www.github.com/jacrys/athenasharp" branch="main"/>
         <license type="expression">MIT</license>

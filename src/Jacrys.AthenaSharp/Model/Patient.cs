@@ -218,6 +218,11 @@ namespace Jacrys.AthenaSharp.Model
             this.Portalaccessgiven = portalaccessgiven;
         }
 
+        public Patient ()
+		{
+
+		}
+
         /// <summary>
         /// If the patient is homebound, this is true.
         /// </summary>
